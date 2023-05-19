@@ -1,9 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using SGE.Application.Bases;
 using SGE.Application.Interfaces;
+using SGE.Domain.Dtos.Token;
 using SGE.Domain.Dtos.Usuario;
 
 namespace SGE.API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/usuario")]
     public class UsuarioController
@@ -16,37 +20,46 @@ namespace SGE.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<UsuarioDataDto>> Post([FromBody] UsuarioCreateDto dto)
+        [AllowAnonymous]
+        public async Task<ActionResult<BaseResponse<UsuarioDataDto>>> Post([FromBody] UsuarioCreateDto dto)
         {
             var usuario = await _usuarioRepository.Create(dto);
             return usuario;
         }
 
         [HttpPut("{id:int}")]
-        public async Task<ActionResult<UsuarioDataDto>> Put([FromRoute] int id, [FromBody] UsuarioEditDto dto)
+        public async Task<ActionResult<BaseResponse<UsuarioDataDto>>> Put([FromRoute] int id, [FromBody] UsuarioEditDto dto)
         {
             var usuario = await _usuarioRepository.Update(dto, id);
             return usuario;
         }
 
         [HttpDelete("{id:int}")]
-        public async Task<ActionResult<bool>> Delete([FromRoute] int id)
+        public async Task<ActionResult<BaseResponse<bool>>> Delete([FromRoute] int id)
         {
             var response = await _usuarioRepository.Delete(id);
             return response;
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<UsuarioDataDto>>> Get()
+        public async Task<ActionResult<BaseResponse<List<UsuarioDataDto>>>> Get()
         {
             var response = await _usuarioRepository.GetAll();
             return response;
         }
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<UsuarioDataDto>> Get([FromRoute] int id)
+        public async Task<ActionResult<BaseResponse<UsuarioDataDto>>> Get([FromRoute] int id)
         {
             var response = await _usuarioRepository.GetById(id);
+            return response;
+        }
+
+        [AllowAnonymous]
+        [HttpPost("generate/token")]
+        public async Task<ActionResult<BaseResponse<string>>> Post(TokenRequestDto tokenRequestDto)
+        {
+            var response = await _usuarioRepository.GenerateToken(tokenRequestDto);
             return response;
         }
     }

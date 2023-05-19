@@ -1,4 +1,7 @@
-﻿using SGE.Domain.Dtos.Usuario;
+﻿using SGE.Application.Bases;
+using SGE.Domain.Dtos.Token;
+using SGE.Domain.Dtos.Usuario;
+using SGE.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,14 +12,17 @@ namespace SGE.Application.Interfaces
 {
     public interface IUsuarioRepository
     {
-        public Task<List<UsuarioDataDto>> GetAll();
+        public Task<BaseResponse<List<UsuarioDataDto>>> GetAll();
 
-        public Task<UsuarioDataDto> GetById(int id);
+        public Task<BaseResponse<UsuarioDataDto>> GetById(int id);
 
-        public Task<UsuarioDataDto> Create(UsuarioCreateDto proveedorDTO);
+        public Task<BaseResponse<UsuarioDataDto>> Create(UsuarioCreateDto proveedorDTO);
 
-        public Task<UsuarioDataDto> Update(UsuarioEditDto proveedorDTO, int id);
+        public Task<BaseResponse<UsuarioDataDto>> Update(UsuarioEditDto proveedorDTO, int id);
 
-        public Task<bool> Delete(int id);
+        public Task<BaseResponse<bool>> Delete(int id);
+        public Task<BaseResponse<string>> GenerateToken(TokenRequestDto tokenRequestDto);
+
+        public Task<Usuario> AccountByuserName(string userName);
     }
 }
