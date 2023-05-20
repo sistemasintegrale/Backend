@@ -31,6 +31,7 @@ builder.Services.AddCors(options => options.AddPolicy("AllowWebapp",
                                                     .AllowAnyHeader()
                                                     .AllowAnyMethod()));
 
+
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();

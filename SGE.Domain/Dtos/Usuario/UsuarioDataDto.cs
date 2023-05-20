@@ -14,5 +14,6 @@ namespace SGE.Domain.Dtos.Usuario
         public string Email { get; set; } = null!;
         public string Password { get; set; } = null!;
         public bool Estado { get; set; }
+        public string Token { get; set; } = null!;
     }
 }

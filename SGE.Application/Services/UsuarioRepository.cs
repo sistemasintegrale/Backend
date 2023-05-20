@@ -42,7 +42,7 @@ namespace SGE.Application.Services
             }
             catch (Exception ex)
             {
-                response.Exito = false;
+                response.IsSucces = false;
                 response.Mensaje = ReplyMessage.MESSAGE_FALIED;
                 response.innerExeption = ex.Message;
             }
@@ -67,7 +67,7 @@ namespace SGE.Application.Services
             }
             catch (Exception ex)
             {
-                response.Exito = false;
+                response.IsSucces = false;
                 response.Mensaje = ReplyMessage.MESSAGE_FALIED;
                 response.innerExeption = ex.Message;
             }
@@ -87,7 +87,7 @@ namespace SGE.Application.Services
             }
             catch (Exception ex)
             {
-                response.Exito = false;
+                response.IsSucces = false;
                 response.Mensaje = ReplyMessage.MESSAGE_FALIED;
                 response.innerExeption = ex.Message;
             }
@@ -101,12 +101,18 @@ namespace SGE.Application.Services
             try
             {
                 var usuarioDB = await _applicationDbContext.Usuarios.FirstOrDefaultAsync(x => x.Id == id);
+                if (usuarioDB is null)
+                {
+                    response.IsSucces = false;
+                    response.Mensaje = ReplyMessage.MESSAGE_QUERY_EMPTY;
+                    return response;
+                }
                 response.Data = _mapper.Map<UsuarioDataDto>(usuarioDB);
                 response.Mensaje = ReplyMessage.MESSAGE_QUERY;
             }
             catch (Exception ex)
             {
-                response.Exito = false;
+                response.IsSucces = false;
                 response.Mensaje = ReplyMessage.MESSAGE_FALIED;
                 response.innerExeption = ex.Message;
             }
@@ -131,7 +137,7 @@ namespace SGE.Application.Services
             }
             catch (Exception ex)
             {
-                response.Exito = false;
+                response.IsSucces = false;
                 response.Mensaje = ReplyMessage.MESSAGE_FALIED;
                 response.innerExeption = ex.Message;
             }
@@ -150,10 +156,15 @@ namespace SGE.Application.Services
                     response.Mensaje = ReplyMessage.MESSAGE_TOKEN;
                     return response;
                 }
+                else
+                {
+                    response.Mensaje = ReplyMessage.MESSAGE_TOKEN_ERROR;
+                    response.IsSucces = false;
+                }
             }
             else
             {
-                response.Exito=false;
+                response.IsSucces = false;
                 response.Mensaje = ReplyMessage.MESSAGE_TOKEN_ERROR;
             }
             return response;
@@ -167,7 +178,8 @@ namespace SGE.Application.Services
             var credencials = new SigningCredentials(securittyKey, SecurityAlgorithms.HmacSha256);
 
             var claims = new List<Claim>() {
-                new Claim(JwtRegisteredClaimNames.NameId,user.Email),
+                new Claim(JwtRegisteredClaimNames.NameId,user.Id.ToString()),
+                new Claim(JwtRegisteredClaimNames.Email,user.Email),
                 new Claim(JwtRegisteredClaimNames.FamilyName,user.Nombre),
                 new Claim(JwtRegisteredClaimNames.GivenName,user.Apellidos),
                 new Claim(JwtRegisteredClaimNames.Jti,user.Id.ToString()),
@@ -188,6 +200,24 @@ namespace SGE.Application.Services
         public async Task<Usuario> AccountByuserName(string userName)
         {
             return await _applicationDbContext.Usuarios.FirstOrDefaultAsync(x => x.Email == userName);
+        }
+
+        public async Task<BaseResponse<UsuarioDataDto>> AccountByuserEmail(string userName)
+        {
+            BaseResponse<UsuarioDataDto> response = new BaseResponse<UsuarioDataDto>();
+            var usuario  = await _applicationDbContext.Usuarios.FirstOrDefaultAsync(x => x.Email == userName);
+           
+            if (usuario != null)
+            {
+                response.Data = _mapper.Map<UsuarioDataDto>(usuario);
+                response.Mensaje = ReplyMessage.MESSAGE_QUERY;
+            }
+            else
+            {
+                response.IsSucces = false;
+                response.Mensaje = ReplyMessage.MESSAGE_QUERY_EMPTY;
+            }
+            return response;
         }
     }
 }

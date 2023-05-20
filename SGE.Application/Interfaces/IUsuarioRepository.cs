@@ -21,8 +21,12 @@ namespace SGE.Application.Interfaces
         public Task<BaseResponse<UsuarioDataDto>> Update(UsuarioEditDto proveedorDTO, int id);
 
         public Task<BaseResponse<bool>> Delete(int id);
+
         public Task<BaseResponse<string>> GenerateToken(TokenRequestDto tokenRequestDto);
 
         public Task<Usuario> AccountByuserName(string userName);
+
+        public Task<BaseResponse<UsuarioDataDto>> AccountByuserEmail(string userName);
+
     }
 }
