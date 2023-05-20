@@ -1,9 +1,9 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{1070EBF6-CB19-42B1-AA90-B47BA0DB3B27}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SGE.Domain/Dtos/Usuario/UsuarioDataDto.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SGE.API/Controllers/UsuarioController.cs">
     <Files>
-      <File FileName="SGE.API/Controllers/UsuarioController.cs" Line="80" Column="1" />
-      <File FileName="SGE.Application/Interfaces/IUsuarioRepository.cs" Line="33" Column="1" />
-      <File FileName="SGE.Application/Services/UsuarioRepository.cs" Line="114" Column="1" />
+      <File FileName="SGE.API/Controllers/UsuarioController.cs" Line="87" Column="1" />
+      <File FileName="SGE.Application/Interfaces/IUsuarioRepository.cs" />
+      <File FileName="SGE.Application/Services/UsuarioRepository.cs" Line="108" Column="37" />
       <File FileName="SGE.Domain/Dtos/Usuario/UsuarioDataDto.cs" Line="16" Column="41" />
       <File FileName="SGE.Application/Bases/BaseResponse.cs" Line="8" Column="2" />
     </Files>
@@ -22,9 +22,7 @@
             </Node>
             <Node name="SGE.Domain" expanded="True">
               <Node name="Dtos" expanded="True">
-                <Node name="Usuario" expanded="True">
-                  <Node name="UsuarioDataDto.cs" selected="True" />
-                </Node>
+                <Node name="Usuario" expanded="True" />
               </Node>
               <Node name="Entities" expanded="True" />
             </Node>
@@ -39,7 +37,7 @@
   <MonoDevelop.Ide.ItemProperties.SGE.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <Breakpoint file="/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.API/Controllers/UsuarioController.cs" relfile="SGE.API/Controllers/UsuarioController.cs" line="74" column="1" />
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
