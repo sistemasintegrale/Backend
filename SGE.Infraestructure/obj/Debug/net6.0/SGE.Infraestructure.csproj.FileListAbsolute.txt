@@ -1,20 +1,3 @@
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/bin/Debug/net6.0/SGE.Infraestructure.deps.json
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/bin/Debug/net6.0/SGE.Infraestructure.dll
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/bin/Debug/net6.0/SGE.Infraestructure.pdb
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/bin/Debug/net6.0/SGE.Domain.dll
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/bin/Debug/net6.0/SGE.Utilities.dll
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/bin/Debug/net6.0/SGE.Domain.pdb
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/bin/Debug/net6.0/SGE.Utilities.pdb
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/obj/Debug/net6.0/SGE.Infraestructure.csproj.AssemblyReference.cache
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/obj/Debug/net6.0/SGE.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/obj/Debug/net6.0/SGE.Infraestructure.AssemblyInfoInputs.cache
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/obj/Debug/net6.0/SGE.Infraestructure.AssemblyInfo.cs
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/obj/Debug/net6.0/SGE.Infraestructure.csproj.CoreCompileInputs.cache
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/obj/Debug/net6.0/SGE.Infraestructure.csproj.CopyComplete
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/obj/Debug/net6.0/SGE.Infraestructure.dll
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/obj/Debug/net6.0/refint/SGE.Infraestructure.dll
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/obj/Debug/net6.0/SGE.Infraestructure.pdb
-D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/obj/Debug/net6.0/ref/SGE.Infraestructure.dll
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Infraestructure/bin/Debug/net6.0/SGE.Infraestructure.deps.json
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Infraestructure/bin/Debug/net6.0/SGE.Infraestructure.dll
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Infraestructure/bin/Debug/net6.0/SGE.Infraestructure.pdb
@@ -32,3 +15,20 @@ D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Infraestructure/obj/Debug/net6.0
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Infraestructure/obj/Debug/net6.0/refint/SGE.Infraestructure.dll
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Infraestructure/obj/Debug/net6.0/SGE.Infraestructure.pdb
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Infraestructure/obj/Debug/net6.0/ref/SGE.Infraestructure.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\bin\Debug\net6.0\SGE.Infraestructure.deps.json
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\bin\Debug\net6.0\SGE.Infraestructure.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\bin\Debug\net6.0\SGE.Infraestructure.pdb
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\bin\Debug\net6.0\SGE.Domain.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\bin\Debug\net6.0\SGE.Utilities.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\bin\Debug\net6.0\SGE.Domain.pdb
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\bin\Debug\net6.0\SGE.Utilities.pdb
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\obj\Debug\net6.0\SGE.Infraestructure.csproj.AssemblyReference.cache
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\obj\Debug\net6.0\SGE.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\obj\Debug\net6.0\SGE.Infraestructure.AssemblyInfoInputs.cache
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\obj\Debug\net6.0\SGE.Infraestructure.AssemblyInfo.cs
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\obj\Debug\net6.0\SGE.Infraestructure.csproj.CoreCompileInputs.cache
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\obj\Debug\net6.0\SGE.Infraestructure.csproj.CopyComplete
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\obj\Debug\net6.0\SGE.Infraestructure.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\obj\Debug\net6.0\refint\SGE.Infraestructure.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\obj\Debug\net6.0\SGE.Infraestructure.pdb
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Infraestructure\obj\Debug\net6.0\ref\SGE.Infraestructure.dll
