@@ -3,14 +3,18 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using SGE.Application.Bases;
+using SGE.Application.Filtro;
 using SGE.Application.Interfaces;
+using SGE.Application.Pagination;
 using SGE.Domain.Dtos.Token;
 using SGE.Domain.Dtos.Usuario;
 using SGE.Domain.Entities;
 using SGE.Infraestructure.Context;
 using SGE.Utilities.Codec;
 using SGE.Utilities.Static;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 
@@ -20,7 +24,7 @@ namespace SGE.Application.Services
     {
         private ApplicationDbContext _applicationDbContext;
         private IMapper _mapper;
-        private IConfiguration _configuration;              
+        private IConfiguration _configuration;
 
         public UsuarioRepository(ApplicationDbContext applicationDbContext, IMapper mapper, IConfiguration configuration)
         {
@@ -76,20 +80,22 @@ namespace SGE.Application.Services
 
 
 
-        public async Task<BaseResponse<List<UsuarioDataDto>>> GetAll()
+        public async Task<PaginationResponse<BaseResponse<List<UsuarioDataDto>>>> GetAll(UsuarioFilter filters)
         {
-            BaseResponse<List<UsuarioDataDto>> response = new BaseResponse<List<UsuarioDataDto>>();
+            PaginationResponse<BaseResponse<List<UsuarioDataDto>>> response = new PaginationResponse<BaseResponse<List<UsuarioDataDto>>>();
             try
             {
-                var usuariosDB = await _applicationDbContext.Usuarios.ToListAsync()!;
-                response.Data = _mapper.Map<List<UsuarioDataDto>>(usuariosDB);
-                response.Mensaje = ReplyMessage.MESSAGE_QUERY;
+                var usuariosDB = await _applicationDbContext.Usuarios.Where(x=>x.Nombre.ToUpper().Contains(filters.Nombre.ToUpper())).Skip(filters.Desde).Take(filters.CantidadRegistros).ToListAsync()!;
+                response.Data = new BaseResponse<List<UsuarioDataDto>>();
+                response.Cantidad = await _applicationDbContext.Usuarios.Where(x => x.Nombre.ToUpper().Contains(filters.Nombre.ToUpper())).CountAsync();
+                response.Data.Data = _mapper.Map<List<UsuarioDataDto>>(usuariosDB);                
+                response.Data.Mensaje = ReplyMessage.MESSAGE_QUERY;
             }
             catch (Exception ex)
             {
-                response.IsSucces = false;
-                response.Mensaje = ReplyMessage.MESSAGE_FALIED;
-                response.innerExeption = ex.Message;
+                response.Data!.IsSucces = false;
+                response.Data.Mensaje = ReplyMessage.MESSAGE_FALIED;
+                response.Data.innerExeption = ex.Message;
             }
             return response;
 
@@ -205,8 +211,8 @@ namespace SGE.Application.Services
         public async Task<BaseResponse<UsuarioDataDto>> AccountByuserEmail(string userName)
         {
             BaseResponse<UsuarioDataDto> response = new BaseResponse<UsuarioDataDto>();
-            var usuario  = await _applicationDbContext.Usuarios.FirstOrDefaultAsync(x => x.Email == userName);
-           
+            var usuario = await _applicationDbContext.Usuarios.FirstOrDefaultAsync(x => x.Email == userName);
+
             if (usuario != null)
             {
                 response.Data = _mapper.Map<UsuarioDataDto>(usuario);

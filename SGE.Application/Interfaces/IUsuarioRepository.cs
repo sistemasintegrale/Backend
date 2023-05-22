@@ -1,4 +1,6 @@
 ﻿using SGE.Application.Bases;
+using SGE.Application.Filtro;
+using SGE.Application.Pagination;
 using SGE.Domain.Dtos.Token;
 using SGE.Domain.Dtos.Usuario;
 using SGE.Domain.Entities;
@@ -12,7 +14,7 @@ namespace SGE.Application.Interfaces
 {
     public interface IUsuarioRepository
     {
-        public Task<BaseResponse<List<UsuarioDataDto>>> GetAll();
+        public Task<PaginationResponse<BaseResponse<List<UsuarioDataDto>>>> GetAll(UsuarioFilter filters);
 
         public Task<BaseResponse<UsuarioDataDto>> GetById(int id);
 

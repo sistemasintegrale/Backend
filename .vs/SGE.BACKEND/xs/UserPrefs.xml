@@ -1,11 +1,11 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{1070EBF6-CB19-42B1-AA90-B47BA0DB3B27}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="SGE.API/Controllers/UsuarioController.cs">
     <Files>
-      <File FileName="SGE.API/Controllers/UsuarioController.cs" Line="87" Column="1" />
+      <File FileName="SGE.API/Controllers/UsuarioController.cs" Line="51" Column="30" />
       <File FileName="SGE.Application/Interfaces/IUsuarioRepository.cs" />
-      <File FileName="SGE.Application/Services/UsuarioRepository.cs" Line="108" Column="37" />
-      <File FileName="SGE.Domain/Dtos/Usuario/UsuarioDataDto.cs" Line="16" Column="41" />
-      <File FileName="SGE.Application/Bases/BaseResponse.cs" Line="8" Column="2" />
+      <File FileName="SGE.Application/Services/UsuarioRepository.cs" />
+      <File FileName="SGE.Domain/Dtos/Usuario/UsuarioDataDto.cs" />
+      <File FileName="SGE.Application/Bases/BaseResponse.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,6 +18,7 @@
             <Node name="SGE.Application" expanded="True">
               <Node name="Bases" expanded="True" />
               <Node name="Interfaces" expanded="True" />
+              <Node name="Mappers" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
             <Node name="SGE.Domain" expanded="True">

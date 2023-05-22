@@ -4,7 +4,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SGE.Application.Bases;
+using SGE.Application.Filtro;
 using SGE.Application.Interfaces;
+using SGE.Application.Pagination;
 using SGE.Domain.Dtos.Token;
 using SGE.Domain.Dtos.Usuario;
 using SGE.Domain.Entities;
@@ -47,11 +49,11 @@ namespace SGE.API.Controllers
             return response;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<BaseResponse<List<UsuarioDataDto>>>> Get()
+        [HttpPost("getAll")]
+        public async Task<ActionResult<PaginationResponse<BaseResponse<List<UsuarioDataDto>>>>> GetAll([FromBody]UsuarioFilter filters)
         {
 
-            var response = await _usuarioRepository.GetAll();
+            var response = await _usuarioRepository.GetAll(filters);
             return response;
         }
 
