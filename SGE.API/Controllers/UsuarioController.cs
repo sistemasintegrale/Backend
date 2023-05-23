@@ -1,7 +1,5 @@
-﻿using System.Security.Claims;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SGE.Application.Bases;
 using SGE.Application.Filtro;
@@ -9,8 +7,8 @@ using SGE.Application.Interfaces;
 using SGE.Application.Pagination;
 using SGE.Domain.Dtos.Token;
 using SGE.Domain.Dtos.Usuario;
-using SGE.Domain.Entities;
 using SGE.Utilities.Codec;
+using System.Security.Claims;
 
 namespace SGE.API.Controllers
 {
