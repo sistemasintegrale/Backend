@@ -938,6 +938,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.16",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16"
         },
         "compile": {
@@ -2401,6 +2402,7 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.16",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.16",
       "SGE.Application >= 1.0.0",
+      "SGE.Domain >= 1.0.0",
       "SGE.Infraestructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -2431,13 +2433,8 @@
         "net6.0"
       ],
       "sources": {
-<<<<<<< HEAD
         "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-=======
-        "/usr/local/share/dotnet/library-packs": {},
-        "/usr/local/share/dotnet/sdk/7.0.302/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
->>>>>>> 975dd58 (update listo)
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2446,6 +2443,9 @@
           "projectReferences": {
             "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Application\\SGE.Application.csproj": {
               "projectPath": "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Application\\SGE.Application.csproj"
+            },
+            "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Domain\\SGE.Domain.csproj": {
+              "projectPath": "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Domain\\SGE.Domain.csproj"
             },
             "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Infraestructure\\SGE.Infraestructure.csproj": {
               "projectPath": "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Infraestructure\\SGE.Infraestructure.csproj"
@@ -2501,11 +2501,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
->>>>>>> 975dd58 (update listo)
       }
     }
   }

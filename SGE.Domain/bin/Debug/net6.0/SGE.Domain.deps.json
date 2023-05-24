@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "SGE.Domain/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.16",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.16"
         },

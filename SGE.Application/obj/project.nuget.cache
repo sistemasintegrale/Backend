@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "jl06cucztTxcCPWmVWI7LENHCBS83WWwqPsjDCpaFBmRcjnDHqLvsCuVnfyjXgCqZovKShL2OQzMmJ9x5Ay0Gw==",
-=======
-  "dgSpecHash": "WT8vCiKSb7FJDH7Huh9kJ19oZrj7bVvDZWDwSwCAKStPLAMfx6bnLl9Hz2ZmtksSTmfRo/u4GAYAzk4s1v8jmw==",
->>>>>>> 975dd58 (update listo)
+  "dgSpecHash": "PMOen3y2MngxyBBMFmbLdb7LAWtfdgraRdwnMhtSNFTRjnzuXmXKwdBNNMfitmu6A8vl/6Cw0YMEsqHhwiRNBQ==",
   "success": true,
   "projectFilePath": "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Application\\SGE.Application.csproj",
   "expectedPackageFiles": [

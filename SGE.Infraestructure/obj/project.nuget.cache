@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "iKaAmI0yBQEOSjBd9ZOXPfzyUOjtr01V1Rv4sdu+rLtZox/hG4J3RtWsj35ewT/x0gpboLfKoj3hvTEXgOHmOw==",
-=======
-  "dgSpecHash": "DmiiETs7pf7PGNXZyGpYSIxbUQ0Adbh3axhbmsGISu5uvyjxnNwnJFjcgC3flcYLuY1ZjgvMe61g3Ee2S/Fo4g==",
->>>>>>> 975dd58 (update listo)
+  "dgSpecHash": "+wqmbTpPz3OtYc0BiEDu7U4HY1dG+WiGOApYiml/xZtCI0lPMAeHV9svscIPQOKGCxBV/AApaeBQUeJ7fxP1vg==",
   "success": true,
   "projectFilePath": "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Infraestructure\\SGE.Infraestructure.csproj",
   "expectedPackageFiles": [

@@ -19,7 +19,4 @@
   <ItemGroup>
     <None Remove="Filtro\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Filtro\" />
-  </ItemGroup>
 </Project>

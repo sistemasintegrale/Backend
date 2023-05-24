@@ -77,6 +77,12 @@
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.API/obj/Debug/net6.0/SGE.API.pdb
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.API/obj/Debug/net6.0/SGE.API.genruntimeconfig.cache
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.API/obj/Debug/net6.0/ref/SGE.API.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\SGE.API.csproj.AssemblyReference.cache
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\SGE.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\SGE.API.AssemblyInfoInputs.cache
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\SGE.API.AssemblyInfo.cs
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\SGE.API.csproj.CoreCompileInputs.cache
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\SGE.API.MvcApplicationPartsAssemblyInfo.cache
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\bin\Debug\net6.0\appsettings.Development.json
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\bin\Debug\net6.0\appsettings.json
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\bin\Debug\net6.0\SGE.API.exe
@@ -132,16 +138,10 @@ D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\bin\Debug\net6.0\SGE.Domain.
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\bin\Debug\net6.0\SGE.Infraestructure.dll
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\bin\Debug\net6.0\SGE.Utilities.dll
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\bin\Debug\net6.0\SGE.Application.pdb
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\bin\Debug\net6.0\SGE.Infraestructure.pdb
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\bin\Debug\net6.0\SGE.Domain.pdb
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\bin\Debug\net6.0\SGE.Infraestructure.pdb
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\bin\Debug\net6.0\SGE.Utilities.pdb
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\SGE.API.csproj.AssemblyReference.cache
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\SGE.API.GeneratedMSBuildEditorConfig.editorconfig
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\SGE.API.AssemblyInfoInputs.cache
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\SGE.API.AssemblyInfo.cs
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\SGE.API.csproj.CoreCompileInputs.cache
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\SGE.API.MvcApplicationPartsAssemblyInfo.cs
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\SGE.API.MvcApplicationPartsAssemblyInfo.cache
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\staticwebassets\msbuild.SGE.API.Microsoft.AspNetCore.StaticWebAssets.props
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\staticwebassets\msbuild.build.SGE.API.props
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.SGE.API.props

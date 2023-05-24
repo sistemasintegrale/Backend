@@ -12,6 +12,7 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.16",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.16",
           "SGE.Application": "1.0.0",
+          "SGE.Domain": "1.0.0",
           "SGE.Infraestructure": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
@@ -542,6 +543,7 @@
       },
       "SGE.Domain/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.16",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16"
         },
         "runtime": {

@@ -143,9 +143,9 @@ namespace SGE.Application.Services
             }
             catch (Exception ex)
             {
-                response.IsSucces = false;
+                response.IsSucces = false; 
                 response.Mensaje = ReplyMessage.MESSAGE_FALIED;
-                response.innerExeption = ex.Message;
+                response.innerExeption = ex.Message; 
             }
             return response;
         }
@@ -161,6 +161,7 @@ namespace SGE.Application.Services
                 usuarioDB.Email = usuarioDto.Email;
                 usuarioDB.Password = Codec.Encriptar(usuarioDto.Password);
                 usuarioDB.Estado = usuarioDto.Estado;
+                usuarioDB.FechaModificacion = DateTime.Now;
                 _applicationDbContext.Usuarios.Update(usuarioDB);
                 await _applicationDbContext.SaveChangesAsync();
                 response.Data = _mapper.Map<UsuarioDataDto>(usuarioDB);
