@@ -58,7 +58,7 @@ namespace SGE.API.Controllers
         [HttpGet("{id:int}")]
         public async Task<ActionResult<BaseResponse<UsuarioDataDto>>> Get([FromRoute] int id)
         {
-            var response = await _usuarioRepository.GetById(id);
+            var response = await _usuarioRepository.GetByIdPass(id);
             return response;
         }
 

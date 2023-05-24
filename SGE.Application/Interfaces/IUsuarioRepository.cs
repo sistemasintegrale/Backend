@@ -17,6 +17,7 @@ namespace SGE.Application.Interfaces
         public Task<PaginationResponse<BaseResponse<List<UsuarioDataDto>>>> GetAll(UsuarioFilter filters);
 
         public Task<BaseResponse<UsuarioDataDto>> GetById(int id);
+        public Task<BaseResponse<UsuarioDataDto>> GetByIdPass(int id);
 
         public Task<BaseResponse<UsuarioDataDto>> Create(UsuarioCreateDto proveedorDTO);
 

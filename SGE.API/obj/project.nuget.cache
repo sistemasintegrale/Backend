@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "oRS7+eWQ7LIbuiV/6v6V1rgYWu/fNr/5zBMTQ6GuIc575vAFDTORpuzSC9P/Y/Ey61JtL3jLlxIF/brpHRjiyw==",
+=======
+  "dgSpecHash": "Yu+5XnlBkxkmwvLHsL+waZcnEIWI0PiE0xcfMc7W5t4rcfhHsphhGU4B7CUJ2AaD49KHn3EtQt1qi1V8jjThvQ==",
+>>>>>>> 975dd58 (update listo)
   "success": true,
   "projectFilePath": "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.API\\SGE.API.csproj",
   "expectedPackageFiles": [

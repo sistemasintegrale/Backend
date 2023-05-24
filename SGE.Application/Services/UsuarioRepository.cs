@@ -125,6 +125,31 @@ namespace SGE.Application.Services
             return response;
         }
 
+        public async Task<BaseResponse<UsuarioDataDto>> GetByIdPass(int id)
+        {
+            BaseResponse<UsuarioDataDto> response = new BaseResponse<UsuarioDataDto>();
+            try
+            {
+                var usuarioDB = await _applicationDbContext.Usuarios.FirstOrDefaultAsync(x => x.Id == id);
+                if (usuarioDB is null)
+                {
+                    response.IsSucces = false;
+                    response.Mensaje = ReplyMessage.MESSAGE_QUERY_EMPTY;
+                    return response;
+                }
+                usuarioDB.Password = Codec.DesEncriptar(usuarioDB.Password);
+                response.Data = _mapper.Map<UsuarioDataDto>(usuarioDB);
+                response.Mensaje = ReplyMessage.MESSAGE_QUERY;
+            }
+            catch (Exception ex)
+            {
+                response.IsSucces = false;
+                response.Mensaje = ReplyMessage.MESSAGE_FALIED;
+                response.innerExeption = ex.Message;
+            }
+            return response;
+        }
+
         public async Task<BaseResponse<UsuarioDataDto>> Update(UsuarioEditDto usuarioDto, int id)
         {
             BaseResponse<UsuarioDataDto> response = new BaseResponse<UsuarioDataDto>();
@@ -134,7 +159,7 @@ namespace SGE.Application.Services
                 usuarioDB.Nombre = usuarioDto.Nombre;
                 usuarioDB.Apellidos = usuarioDto.Apellidos;
                 usuarioDB.Email = usuarioDto.Email;
-                usuarioDB.Password = usuarioDto.Password;
+                usuarioDB.Password = Codec.Encriptar(usuarioDto.Password);
                 usuarioDB.Estado = usuarioDto.Estado;
                 _applicationDbContext.Usuarios.Update(usuarioDB);
                 await _applicationDbContext.SaveChangesAsync();

@@ -1,11 +1,17 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{1070EBF6-CB19-42B1-AA90-B47BA0DB3B27}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SGE.API/Controllers/UsuarioController.cs">
+﻿<Properties StartupConfiguration="{1070EBF6-CB19-42B1-AA90-B47BA0DB3B27}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SGE.API/Extensions/SwaggerExtensions.cs">
     <Files>
-      <File FileName="SGE.API/Controllers/UsuarioController.cs" Line="51" Column="30" />
+      <File FileName="SGE.API/Controllers/UsuarioController.cs" />
       <File FileName="SGE.Application/Interfaces/IUsuarioRepository.cs" />
       <File FileName="SGE.Application/Services/UsuarioRepository.cs" />
       <File FileName="SGE.Domain/Dtos/Usuario/UsuarioDataDto.cs" />
       <File FileName="SGE.Application/Bases/BaseResponse.cs" />
+      <File FileName="SGE.Application/Filtro/UsuarioFilter.cs" />
+      <File FileName="SGE.Application/Bases/PaginationResponse.cs" />
+      <File FileName="SGE.API/appsettings.json" />
+      <File FileName="SGE.API/Extensions/AuthenticationExtensions.cs" />
+      <File FileName="SGE.API/Extensions/SwaggerExtensions.cs" Line="22" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,33 +19,25 @@
           <Node name="SGE.BACKEND" expanded="True">
             <Node name="SGE.API" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Extensions" expanded="True" />
+              <Node name="Extensions" expanded="True">
+                <Node name="SwaggerExtensions.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="SGE.Application" expanded="True">
               <Node name="Bases" expanded="True" />
+              <Node name="Filtro" expanded="True" />
               <Node name="Interfaces" expanded="True" />
-              <Node name="Mappers" expanded="True" />
               <Node name="Services" expanded="True" />
-            </Node>
-            <Node name="SGE.Domain" expanded="True">
-              <Node name="Dtos" expanded="True">
-                <Node name="Usuario" expanded="True" />
-              </Node>
-              <Node name="Entities" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.SGE.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SGE.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>
