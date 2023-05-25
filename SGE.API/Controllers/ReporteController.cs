@@ -24,7 +24,7 @@ namespace SGE.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>>> Post(ReporteHistorialFiltro filtro)
+        public async Task<ActionResult<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>>> Post([FromBody]ReporteHistorialFiltro filtro)
         {
             return await  _reportesRepository.ReporteHistorial(filtro);             
         }

@@ -20,6 +20,7 @@
     <ProjectReference Include="..\SGE.Application\SGE.Application.csproj" />
     <ProjectReference Include="..\SGE.Domain\SGE.Domain.csproj" />
     <ProjectReference Include="..\SGE.Infraestructure\SGE.Infraestructure.csproj" />
+    <ProjectReference Include="..\SGE.Utilities\SGE.Utilities.csproj" />
   </ItemGroup>
 
 </Project>

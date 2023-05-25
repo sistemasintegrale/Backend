@@ -6,6 +6,7 @@ D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Ou
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\SGE.API.pdb
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\AutoMapper.dll
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -49,7 +50,7 @@ D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Ou
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\SGE.Infraestructure.dll
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\SGE.Utilities.dll
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\SGE.Application.pdb
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\SGE.Infraestructure.pdb
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\SGE.Domain.pdb
+D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\SGE.Infraestructure.pdb
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\SGE.Utilities.pdb
 D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.API\obj\Release\net6.0\PubTmp\Out\SGE.API.deps.json

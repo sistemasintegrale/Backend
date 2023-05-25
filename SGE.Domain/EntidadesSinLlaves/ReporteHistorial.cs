@@ -15,7 +15,7 @@ namespace SGE.Domain.EntidadesSinLlaves
         public string NumeroOrden { get; set; } = null!;
         public string Situacion { get; set; } = null!;
         public string NumeroDocumento { get; set; } = null!;
-        public DateTime FechaOrden { get; set; }
+        public string FechaOrden { get; set; } = null!;
         public string DescripcionTipoServicio { get; set; } = null!;
         public string Kilometraje { get; set; } = null!;
         public decimal Cantidad { get; set; }

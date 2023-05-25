@@ -465,6 +465,7 @@
       },
       "SGE.Domain/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.16",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16"
         },
         "runtime": {

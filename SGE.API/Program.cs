@@ -33,7 +33,7 @@ builder.Services.AddCors(options => options.AddPolicy("AllowWebapp",
                                                     .AllowAnyHeader()
                                                     .AllowAnyMethod()));
 
-
+ 
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
@@ -42,16 +42,11 @@ builder.Services.AddSwagger();
 
 var app = builder.Build();
 
+//Configure the HTTP request pipeline.
 app.UseSwagger();
-
 app.UseSwaggerUI();
 
-app.UseCors("AllowWebapp"); 
-
-app.UseHttpsRedirection();
-
-app.UseAuthentication();
-
+app.UseCors("AllowWebapp");
 app.UseAuthorization();
 
 app.MapControllers();

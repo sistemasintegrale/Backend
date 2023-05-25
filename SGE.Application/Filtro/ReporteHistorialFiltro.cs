@@ -8,8 +8,8 @@ namespace SGE.Application.Filtro
 {
     public class ReporteHistorialFiltro
     {
-        public DateTime fechaDesde { get; set; }
-        public DateTime fechaHasta { get; set; }
+        public string fechaDesde { get; set; } = null!;
+        public string fechaHasta { get; set; } = null!;
         public int desde { get; set; }
         public int hasta { get; set;}
     }
