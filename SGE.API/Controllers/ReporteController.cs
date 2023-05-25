@@ -1,26 +1,32 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SGE.Application.Bases;
 using SGE.Application.Filtro;
 using SGE.Application.Interfaces;
+using SGE.Application.Pagination;
+using SGE.Domain.Dtos.ReporteHistorial;
+using SGE.Domain.Dtos.Usuario;
 
 namespace SGE.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class ReporteController : ControllerBase
     {
-        private readonly IReportesRepository reportesRepository;
+        private readonly IReportesRepository _reportesRepository;
 
         public ReporteController(IReportesRepository reportesRepository)
         {
-            this.reportesRepository = reportesRepository;
+            _reportesRepository = reportesRepository;
         }
 
         [HttpPost]
-        public ActionResult Pos(ReporteHistorialFiltro filtro)
+        public async Task<ActionResult<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>>> Post(ReporteHistorialFiltro filtro)
         {
-            var dara = reportesRepository.ReporteHistorial(filtro);
-            return Ok();
+            return await  _reportesRepository.ReporteHistorial(filtro);             
         }
     }
 }

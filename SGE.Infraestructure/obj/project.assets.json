@@ -1945,44 +1945,36 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ROBERTO\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/rafhael/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Infraestructure\\SGE.Infraestructure.csproj",
+      "projectUniqueName": "/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Infraestructure/SGE.Infraestructure.csproj",
       "projectName": "SGE.Infraestructure",
-      "projectPath": "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Infraestructure\\SGE.Infraestructure.csproj",
-      "packagesPath": "C:\\Users\\ROBERTO\\.nuget\\packages\\",
-      "outputPath": "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Infraestructure\\obj\\",
+      "projectPath": "/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Infraestructure/SGE.Infraestructure.csproj",
+      "packagesPath": "/Users/rafhael/.nuget/packages/",
+      "outputPath": "/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Infraestructure/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ROBERTO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/rafhael/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Domain\\SGE.Domain.csproj": {
-              "projectPath": "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Domain\\SGE.Domain.csproj"
+            "/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/SGE.Domain.csproj": {
+              "projectPath": "/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/SGE.Domain.csproj"
             },
-            "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Utilities\\SGE.Utilities.csproj": {
-              "projectPath": "D:\\PROYECTOS RAFHAEL\\SOLUCIONES\\SGE.BACKEND\\SGE.Utilities\\SGE.Utilities.csproj"
+            "/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Utilities/SGE.Utilities.csproj": {
+              "projectPath": "/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Utilities/SGE.Utilities.csproj"
             }
           }
         }
@@ -2012,7 +2004,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
       }
     }
   }

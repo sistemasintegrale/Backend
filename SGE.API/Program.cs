@@ -18,6 +18,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 var mapperConfig = new MapperConfiguration(m =>
 {
     m.AddProfile(new UsuarioMappingProfile());
+    m.AddProfile(new ReporteHistorialMappingProfile());
 });
 
 IMapper mapper = mapperConfig.CreateMapper();
