@@ -36,3 +36,22 @@ D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Application/obj/Release/net6.0/r
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Application/obj/Release/net6.0/refint/SGE.Application.dll
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Application/obj/Release/net6.0/SGE.Application.pdb
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Application/obj/Release/net6.0/ref/SGE.Application.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\bin\Release\net6.0\SGE.Application.deps.json
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\bin\Release\net6.0\SGE.Application.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\bin\Release\net6.0\SGE.Application.pdb
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\bin\Release\net6.0\SGE.Domain.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\bin\Release\net6.0\SGE.Infraestructure.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\bin\Release\net6.0\SGE.Utilities.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\bin\Release\net6.0\SGE.Domain.pdb
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\bin\Release\net6.0\SGE.Infraestructure.pdb
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\bin\Release\net6.0\SGE.Utilities.pdb
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\obj\Release\net6.0\SGE.Application.csproj.AssemblyReference.cache
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\obj\Release\net6.0\SGE.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\obj\Release\net6.0\SGE.Application.AssemblyInfoInputs.cache
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\obj\Release\net6.0\SGE.Application.AssemblyInfo.cs
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\obj\Release\net6.0\SGE.Application.csproj.CoreCompileInputs.cache
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\obj\Release\net6.0\SGE.Application.csproj.CopyComplete
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\obj\Release\net6.0\SGE.Application.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\obj\Release\net6.0\refint\SGE.Application.dll
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\obj\Release\net6.0\SGE.Application.pdb
+D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.Application\obj\Release\net6.0\ref\SGE.Application.dll
