@@ -1,14 +1,28 @@
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Domain\bin\Release\net6.0\SGE.Domain.deps.json
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Domain\bin\Release\net6.0\SGE.Domain.runtimeconfig.json
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Domain\bin\Release\net6.0\SGE.Domain.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Domain\bin\Release\net6.0\SGE.Domain.pdb
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Domain\obj\Release\net6.0\SGE.Domain.csproj.AssemblyReference.cache
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Domain\obj\Release\net6.0\SGE.Domain.GeneratedMSBuildEditorConfig.editorconfig
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Domain\obj\Release\net6.0\SGE.Domain.AssemblyInfoInputs.cache
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Domain\obj\Release\net6.0\SGE.Domain.AssemblyInfo.cs
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Domain\obj\Release\net6.0\SGE.Domain.csproj.CoreCompileInputs.cache
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Domain\obj\Release\net6.0\SGE.Domain.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Domain\obj\Release\net6.0\refint\SGE.Domain.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Domain\obj\Release\net6.0\SGE.Domain.pdb
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Domain\obj\Release\net6.0\SGE.Domain.genruntimeconfig.cache
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Domain\obj\Release\net6.0\ref\SGE.Domain.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Domain/bin/Release/net6.0/SGE.Domain.deps.json
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Domain/bin/Release/net6.0/SGE.Domain.runtimeconfig.json
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Domain/bin/Release/net6.0/SGE.Domain.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Domain/bin/Release/net6.0/SGE.Domain.pdb
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Domain/obj/Release/net6.0/SGE.Domain.csproj.AssemblyReference.cache
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Domain/obj/Release/net6.0/SGE.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Domain/obj/Release/net6.0/SGE.Domain.AssemblyInfoInputs.cache
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Domain/obj/Release/net6.0/SGE.Domain.AssemblyInfo.cs
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Domain/obj/Release/net6.0/SGE.Domain.csproj.CoreCompileInputs.cache
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Domain/obj/Release/net6.0/SGE.Domain.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Domain/obj/Release/net6.0/refint/SGE.Domain.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Domain/obj/Release/net6.0/SGE.Domain.pdb
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Domain/obj/Release/net6.0/SGE.Domain.genruntimeconfig.cache
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Domain/obj/Release/net6.0/ref/SGE.Domain.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/bin/Release/net6.0/SGE.Domain.deps.json
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/bin/Release/net6.0/SGE.Domain.runtimeconfig.json
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/bin/Release/net6.0/SGE.Domain.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/bin/Release/net6.0/SGE.Domain.pdb
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/obj/Release/net6.0/SGE.Domain.csproj.AssemblyReference.cache
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/obj/Release/net6.0/SGE.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/obj/Release/net6.0/SGE.Domain.AssemblyInfoInputs.cache
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/obj/Release/net6.0/SGE.Domain.AssemblyInfo.cs
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/obj/Release/net6.0/SGE.Domain.csproj.CoreCompileInputs.cache
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/obj/Release/net6.0/SGE.Domain.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/obj/Release/net6.0/refint/SGE.Domain.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/obj/Release/net6.0/SGE.Domain.pdb
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/obj/Release/net6.0/SGE.Domain.genruntimeconfig.cache
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Domain/obj/Release/net6.0/ref/SGE.Domain.dll

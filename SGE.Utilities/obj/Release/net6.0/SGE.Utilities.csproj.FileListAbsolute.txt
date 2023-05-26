@@ -1,12 +1,24 @@
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Utilities\bin\Release\net6.0\SGE.Utilities.deps.json
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Utilities\bin\Release\net6.0\SGE.Utilities.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Utilities\bin\Release\net6.0\SGE.Utilities.pdb
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Utilities\obj\Release\net6.0\SGE.Utilities.csproj.AssemblyReference.cache
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Utilities\obj\Release\net6.0\SGE.Utilities.GeneratedMSBuildEditorConfig.editorconfig
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Utilities\obj\Release\net6.0\SGE.Utilities.AssemblyInfoInputs.cache
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Utilities\obj\Release\net6.0\SGE.Utilities.AssemblyInfo.cs
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Utilities\obj\Release\net6.0\SGE.Utilities.csproj.CoreCompileInputs.cache
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Utilities\obj\Release\net6.0\SGE.Utilities.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Utilities\obj\Release\net6.0\refint\SGE.Utilities.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Utilities\obj\Release\net6.0\SGE.Utilities.pdb
-D:\PROYECTOS RAFHAEL\SOLUCIONES\SGE.BACKEND\SGE.Utilities\obj\Release\net6.0\ref\SGE.Utilities.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Utilities/bin/Release/net6.0/SGE.Utilities.deps.json
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Utilities/bin/Release/net6.0/SGE.Utilities.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Utilities/bin/Release/net6.0/SGE.Utilities.pdb
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Utilities/obj/Release/net6.0/SGE.Utilities.csproj.AssemblyReference.cache
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Utilities/obj/Release/net6.0/SGE.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Utilities/obj/Release/net6.0/SGE.Utilities.AssemblyInfoInputs.cache
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Utilities/obj/Release/net6.0/SGE.Utilities.AssemblyInfo.cs
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Utilities/obj/Release/net6.0/SGE.Utilities.csproj.CoreCompileInputs.cache
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Utilities/obj/Release/net6.0/SGE.Utilities.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Utilities/obj/Release/net6.0/refint/SGE.Utilities.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Utilities/obj/Release/net6.0/SGE.Utilities.pdb
+D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.Utilities/obj/Release/net6.0/ref/SGE.Utilities.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Utilities/bin/Release/net6.0/SGE.Utilities.deps.json
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Utilities/bin/Release/net6.0/SGE.Utilities.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Utilities/bin/Release/net6.0/SGE.Utilities.pdb
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Utilities/obj/Release/net6.0/SGE.Utilities.csproj.AssemblyReference.cache
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Utilities/obj/Release/net6.0/SGE.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Utilities/obj/Release/net6.0/SGE.Utilities.AssemblyInfoInputs.cache
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Utilities/obj/Release/net6.0/SGE.Utilities.AssemblyInfo.cs
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Utilities/obj/Release/net6.0/SGE.Utilities.csproj.CoreCompileInputs.cache
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Utilities/obj/Release/net6.0/SGE.Utilities.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Utilities/obj/Release/net6.0/refint/SGE.Utilities.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Utilities/obj/Release/net6.0/SGE.Utilities.pdb
+/Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.Utilities/obj/Release/net6.0/ref/SGE.Utilities.dll

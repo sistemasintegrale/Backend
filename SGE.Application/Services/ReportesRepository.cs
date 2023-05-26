@@ -48,7 +48,7 @@ namespace SGE.Application.Services
             catch (Exception ex)
             {
                 response.Data!.IsSucces = false;
-                response.Data.Mensaje = ReplyMessage.MESSAGE_FALIED;
+                response.Data.Mensaje = ReplyMessage.MESSAGE_FALIED + filtro;
                 response.Data.innerExeption = ex.Message;
             }
             return response;
@@ -72,8 +72,8 @@ namespace SGE.Application.Services
                 conn.Open();
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.CommandText = "USP_PRY_HISTORIA_POR_PLACA";
-                cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.SmallDateTime).Value = filtro.fechaDesde;
-                cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.SmallDateTime).Value = filtro.fechaHasta;
+                cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaDesde;
+                cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaHasta;
                 cmd.Parameters.Add("@desde", System.Data.SqlDbType.Int).Value = filtro.desde;
                 cmd.Parameters.Add("@hasta", System.Data.SqlDbType.Int).Value = filtro.hasta;
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -116,8 +116,8 @@ namespace SGE.Application.Services
                 conn.Open();
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.CommandText = "USP_PRY_HISTORIA_POR_PLACA_CANTIDAD_REGISTROS";
-                cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.SmallDateTime).Value =filtro.fechaDesde;
-                cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.SmallDateTime).Value = filtro.fechaHasta;
+                cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar,10).Value =  filtro.fechaDesde;
+                cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar,10).Value = filtro.fechaHasta;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {

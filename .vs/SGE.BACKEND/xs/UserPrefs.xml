@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{1070EBF6-CB19-42B1-AA90-B47BA0DB3B27}|Default" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SGE.API/Extensions/SwaggerExtensions.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SGE.Application/Services/ReportesRepository.cs">
     <Files>
       <File FileName="SGE.API/Controllers/UsuarioController.cs" />
       <File FileName="SGE.Application/Interfaces/IUsuarioRepository.cs" />
@@ -11,17 +11,18 @@
       <File FileName="SGE.Application/Bases/PaginationResponse.cs" />
       <File FileName="SGE.API/appsettings.json" />
       <File FileName="SGE.API/Extensions/AuthenticationExtensions.cs" />
-      <File FileName="SGE.API/Extensions/SwaggerExtensions.cs" Line="22" Column="45" />
+      <File FileName="SGE.API/Extensions/SwaggerExtensions.cs" />
+      <File FileName="SGE.API/Properties/launchSettings.json" />
+      <File FileName="SGE.Application/Services/ReportesRepository.cs" Line="48" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SGE.BACKEND" expanded="True">
-            <Node name="SGE.API" expanded="True">
+            <Node name="SGE.API" expanded="True" selected="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Extensions" expanded="True">
-                <Node name="SwaggerExtensions.cs" selected="True" />
-              </Node>
+              <Node name="Extensions" expanded="True" />
+              <Node name="Properties" expanded="True" />
             </Node>
             <Node name="SGE.Application" expanded="True">
               <Node name="Bases" expanded="True" />
