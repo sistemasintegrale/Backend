@@ -9,12 +9,15 @@ using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 var Configuration = builder.Configuration;
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+var connectionStringNovaGlass = builder.Configuration.GetConnectionString("ConnectionNovaGlass");
+var connectionStringNovaMotos = builder.Configuration.GetConnectionString("ConnectionNovaMotos");
 
 
 builder.Services.AddAuthentication(Configuration);
 
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionStringNovaGlass));
+builder.Services.AddDbContext<NovaMotosDbContext>(options => options.UseSqlServer(connectionStringNovaMotos));
+
 var mapperConfig = new MapperConfiguration(m =>
 {
     m.AddProfile(new UsuarioMappingProfile());

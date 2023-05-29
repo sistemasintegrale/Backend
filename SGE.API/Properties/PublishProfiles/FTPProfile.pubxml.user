@@ -7,15 +7,15 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA20fZT5+uC0qCz3HFmFC3wAAAAAACAAAAAAAQZgAAAAEAACAAAADQnuFBcLc+32yxYqYCrWV8BDdTzFmnZd+U6xBgxQ+gUgAAAAAOgAAAAAIAACAAAAALtuPgaFGCjq7xbJLU3ZOKso6nhBJR0A9rdFoaoluFXCAAAADUXWqV7VG93O55CJzhjSEfKTj272/1avxv6miSf3b0ZUAAAABVjCpHWIH2SpaPrevu5JXt4bbI+bjAS+R0t6B6Ca0HJoMuTYz07THZFKgRWmbbV2+pukbV16G2CrP9nIyivR7o</EncryptedPassword>
     <_PublishTargetUrl>ftp://198.37.116.18/www.novaglassBackend.somee.com</_PublishTargetUrl>
-    <History>True|2023-05-26T14:44:42.5612137Z;False|2023-05-26T09:37:21.2024155-05:00;True|2023-05-25T18:31:21.9922759-05:00;True|2023-05-25T18:24:57.0048796-05:00;False|2023-05-25T18:21:48.0518455-05:00;True|2023-05-25T16:42:05.9592006-05:00;True|2023-05-25T16:23:20.6412075-05:00;</History>
+    <History>True|2023-05-29T22:22:17.6193099Z;True|2023-05-26T09:44:42.5612137-05:00;False|2023-05-26T09:37:21.2024155-05:00;True|2023-05-25T18:31:21.9922759-05:00;True|2023-05-25T18:24:57.0048796-05:00;False|2023-05-25T18:21:48.0518455-05:00;True|2023-05-25T16:42:05.9592006-05:00;True|2023-05-25T16:23:20.6412075-05:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="appsettings.Development.json">
-      <publishTime>05/26/2023 09:30:09</publishTime>
+      <publishTime>05/26/2023 16:29:20</publishTime>
     </File>
     <File Include="appsettings.json">
-      <publishTime>05/26/2023 09:30:09</publishTime>
+      <publishTime>05/29/2023 16:39:13</publishTime>
     </File>
     <File Include="AutoMapper.dll">
       <publishTime>01/16/2023 10:41:56</publishTime>
@@ -108,25 +108,25 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/15/2019 03:53:46</publishTime>
     </File>
     <File Include="SGE.API.deps.json">
-      <publishTime>05/26/2023 09:42:51</publishTime>
+      <publishTime>05/29/2023 17:20:20</publishTime>
     </File>
     <File Include="SGE.API.dll">
-      <publishTime>05/26/2023 09:42:41</publishTime>
+      <publishTime>05/29/2023 17:20:14</publishTime>
     </File>
     <File Include="SGE.API.exe">
-      <publishTime>05/26/2023 09:42:41</publishTime>
+      <publishTime>05/29/2023 17:20:14</publishTime>
     </File>
     <File Include="SGE.API.pdb">
-      <publishTime>05/26/2023 09:42:41</publishTime>
+      <publishTime>05/29/2023 17:20:14</publishTime>
     </File>
     <File Include="SGE.API.runtimeconfig.json">
       <publishTime>05/26/2023 09:42:41</publishTime>
     </File>
     <File Include="SGE.Application.dll">
-      <publishTime>05/26/2023 09:42:40</publishTime>
+      <publishTime>05/29/2023 17:20:13</publishTime>
     </File>
     <File Include="SGE.Application.pdb">
-      <publishTime>05/26/2023 09:42:40</publishTime>
+      <publishTime>05/29/2023 17:20:13</publishTime>
     </File>
     <File Include="SGE.Domain.dll">
       <publishTime>05/26/2023 09:42:39</publishTime>
@@ -135,10 +135,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/26/2023 09:42:39</publishTime>
     </File>
     <File Include="SGE.Infraestructure.dll">
-      <publishTime>05/26/2023 09:42:40</publishTime>
+      <publishTime>05/29/2023 17:20:12</publishTime>
     </File>
     <File Include="SGE.Infraestructure.pdb">
-      <publishTime>05/26/2023 09:42:40</publishTime>
+      <publishTime>05/29/2023 17:20:12</publishTime>
     </File>
     <File Include="SGE.Utilities.dll">
       <publishTime>05/26/2023 09:42:39</publishTime>
@@ -180,7 +180,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/15/2019 03:56:52</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>05/26/2023 09:42:51</publishTime>
+      <publishTime>05/29/2023 17:20:21</publishTime>
     </File>
   </ItemGroup>
 </Project>

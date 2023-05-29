@@ -23,13 +23,15 @@ namespace SGE.Application.Services
 {
     public class ReportesRepository : IReportesRepository
     {
+        private readonly NovaMotosDbContext _novaMotosDbContext;
         private readonly ApplicationDbContext _context;
         private readonly IMapper _mapper;
 
-        public ReportesRepository(ApplicationDbContext context, IMapper mapper)
+        public ReportesRepository(ApplicationDbContext context, IMapper mapper, NovaMotosDbContext novaMotosDbContext)
         {
             _context = context;
             _mapper = mapper;
+            _novaMotosDbContext = novaMotosDbContext;
         }
 
         public async Task<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>> ReporteHistorial(ReporteHistorialFiltro filtro)
@@ -118,6 +120,103 @@ namespace SGE.Application.Services
                 cmd.CommandText = "USP_PRY_HISTORIA_POR_PLACA_CANTIDAD_REGISTROS";
                 cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar,10).Value =  filtro.fechaDesde;
                 cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar,10).Value = filtro.fechaHasta;
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Cantidad = (int)reader["Cantidad"];
+                }
+
+                conn.Close();
+                return Cantidad;
+            });
+        }
+
+        public async Task<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>> ReporteHistorialMotos(ReporteHistorialFiltro filtro)
+        {
+            PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>> response = new PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>();
+            response.Data = new BaseResponse<List<ReporteHistorialResponseDto>>();
+            try
+            {
+                List<ReporteHistorial> listaResultado = new List<ReporteHistorial>();
+                var tupla = await Task.WhenAll(ObtenerReporteHistorialMotos(filtro));
+                listaResultado = tupla[0].Item1;
+                response.Cantidad = tupla[0].Item2;
+                response.Data.Data = _mapper.Map<List<ReporteHistorialResponseDto>>(listaResultado);
+                response.Data.Mensaje = ReplyMessage.MESSAGE_QUERY;
+            }
+            catch (Exception ex)
+            {
+                response.Data!.IsSucces = false;
+                response.Data.Mensaje = ReplyMessage.MESSAGE_FALIED + filtro;
+                response.Data.innerExeption = ex.Message;
+            }
+            return response;
+        }
+
+        private async Task<Tuple<List<ReporteHistorial>, int>> ObtenerReporteHistorialMotos(ReporteHistorialFiltro filtro)
+        {
+            var lista = await CargarRegistrosReporteHistorialMotos(filtro);
+            var cantidad = await CargarCantidadRegistrosReporteHistorialMotos(filtro);
+
+            return new Tuple<List<ReporteHistorial>, int>(lista, cantidad);
+        }
+
+        private async Task<List<ReporteHistorial>> CargarRegistrosReporteHistorialMotos(ReporteHistorialFiltro filtro)
+        {
+            return await Task.Run(() =>
+            {
+                List<ReporteHistorial> listaResultado = new List<ReporteHistorial>();
+                SqlConnection conn = (SqlConnection)_novaMotosDbContext.Database.GetDbConnection();
+                SqlCommand cmd = conn.CreateCommand();
+                conn.Open();
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "USP_PRY_HISTORIA_POR_PLACA";
+                cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaDesde;
+                cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaHasta;
+                cmd.Parameters.Add("@desde", System.Data.SqlDbType.Int).Value = filtro.desde;
+                cmd.Parameters.Add("@hasta", System.Data.SqlDbType.Int).Value = filtro.hasta;
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+
+
+
+                    listaResultado.Add(new ReporteHistorial()
+                    {
+                        Placa = (string)reader["Placa"],
+                        NombreCliente = (string)reader["NombreCliente"],
+                        Marca = (string)reader["Marca"],
+                        Modelo = (string)reader["Modelo"],
+                        NumeroOrden = (string)reader["NumeroOrden"],
+                        Situacion = (string)reader["Situacion"],
+                        NumeroDocumento = (string)reader["NumeroDocumento"],
+                        FechaOrden = (string)reader["FechaOrden"],
+                        DescripcionTipoServicio = (string)reader["DescripcionTipoServicio"],
+                        Kilometraje = (string)reader["Kilometraje"],
+                        Cantidad = (decimal)reader["Cantidad"],
+                        DescripcionServicio = (string)reader["DescripcionServicio"],
+                        PrecioTotalItem = (decimal)reader["PrecioTotalItem"],
+                        CodigoMoneda = (int)reader["CodigoMoneda"],
+                    });
+                }
+
+                conn.Close();
+                return listaResultado;
+            });
+        }
+
+        private async Task<int> CargarCantidadRegistrosReporteHistorialMotos(ReporteHistorialFiltro filtro)
+        {
+            return await Task.Run(() =>
+            {
+                int Cantidad = 0;
+                SqlConnection conn = (SqlConnection)_novaMotosDbContext.Database.GetDbConnection();
+                SqlCommand cmd = conn.CreateCommand();
+                conn.Open();
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "USP_PRY_HISTORIA_POR_PLACA_CANTIDAD_REGISTROS";
+                cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaDesde;
+                cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaHasta;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {

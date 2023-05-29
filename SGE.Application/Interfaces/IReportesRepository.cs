@@ -14,5 +14,6 @@ namespace SGE.Application.Interfaces
     public interface IReportesRepository
     {
         Task<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>> ReporteHistorial(ReporteHistorialFiltro filtro);
+        Task<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>> ReporteHistorialMotos(ReporteHistorialFiltro filtro);
     }
 }

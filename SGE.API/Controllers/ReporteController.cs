@@ -28,5 +28,12 @@ namespace SGE.API.Controllers
         {
             return await  _reportesRepository.ReporteHistorial(filtro);             
         }
+
+        [HttpPost("motos")]
+        [AllowAnonymous]
+        public async Task<ActionResult<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>>> PostMotos([FromBody] ReporteHistorialFiltro filtro)
+        {
+            return await _reportesRepository.ReporteHistorialMotos(filtro);
+        }
     }
 }
