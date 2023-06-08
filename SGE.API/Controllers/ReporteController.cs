@@ -6,6 +6,10 @@ using SGE.Application.Bases;
 using SGE.Application.Filtro;
 using SGE.Application.Interfaces;
 using SGE.Application.Pagination;
+using SGE.Domain.Dtos;
+using SGE.Domain.Dtos.Marca;
+using SGE.Domain.Dtos.Modelo;
+using SGE.Domain.Dtos.OrdenReparacion;
 using SGE.Domain.Dtos.ReporteHistorial;
 using SGE.Domain.Dtos.Usuario;
 
@@ -23,17 +27,36 @@ namespace SGE.API.Controllers
             _reportesRepository = reportesRepository;
         }
 
-        [HttpPost]
-        public async Task<ActionResult<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>>> Post([FromBody]ReporteHistorialFiltro filtro)
+        [HttpPost("{service:int}")]
+        public async Task<ActionResult<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>>> Post([FromBody] ReporteHistorialFiltro filtro, [FromRoute] int service)
         {
-            return await  _reportesRepository.ReporteHistorial(filtro);             
+            return await _reportesRepository.ReporteHistorial(filtro, service);
         }
 
-        [HttpPost("motos")]
-        [AllowAnonymous]
-        public async Task<ActionResult<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>>> PostMotos([FromBody] ReporteHistorialFiltro filtro)
+ 
+
+        [HttpGet("placas/{service:int}")]
+        public async Task<ActionResult<BaseResponse<List<PlacaDto>>>> GetPlacas([FromRoute] int service)
         {
-            return await _reportesRepository.ReporteHistorialMotos(filtro);
+            return await _reportesRepository.ListPlaca(service);
+        }
+
+        [HttpGet("modelos/{service:int}")]
+        public async Task<ActionResult<BaseResponse<List<ModeloDto>>>> GetModelos([FromRoute] int service)
+        {
+            return await _reportesRepository.ListModelo(service);
+        }
+
+        [HttpGet("marcas/{service:int}")]
+        public async Task<ActionResult<BaseResponse<List<MarcaDto>>>> GetMarcas([FromRoute] int service)
+        {
+            return await _reportesRepository.ListMarca(service);
+        }
+
+        [HttpGet("or/{service:int}")]
+        public async Task<ActionResult<BaseResponse<List<OrdenReparacionDto>>>> GetOR([FromRoute] int service)
+        {
+            return await _reportesRepository.ListOR(service);
         }
     }
 }

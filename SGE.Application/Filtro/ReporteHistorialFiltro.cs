@@ -12,5 +12,9 @@ namespace SGE.Application.Filtro
         public string fechaHasta { get; set; } = null!;
         public int desde { get; set; }
         public int hasta { get; set;}
+        public int marca { get; set; }
+        public int modelo { get; set; }
+        public int placa { get; set; }
+        public int orden { get; set; }
     }
 }
