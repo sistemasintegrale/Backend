@@ -35,28 +35,28 @@ namespace SGE.API.Controllers
 
  
 
-        [HttpGet("placas/{service:int}")]
-        public async Task<ActionResult<BaseResponse<List<PlacaDto>>>> GetPlacas([FromRoute] int service)
+        [HttpPost("placas/{service:int}")]
+        public async Task<ActionResult<BaseResponse<List<PlacaDto>>>> GetPlacas([FromRoute] int service,[FromBody] ReporteHistorialFiltro filtro)
         {
-            return await _reportesRepository.ListPlaca(service);
+            return await _reportesRepository.ListPlaca(service,filtro);
         }
 
-        [HttpGet("modelos/{service:int}")]
-        public async Task<ActionResult<BaseResponse<List<ModeloDto>>>> GetModelos([FromRoute] int service)
+        [HttpPost("modelos/{service:int}")]
+        public async Task<ActionResult<BaseResponse<List<ModeloDto>>>> GetModelos([FromRoute] int service, [FromBody] ReporteHistorialFiltro filtro)
         {
-            return await _reportesRepository.ListModelo(service);
+            return await _reportesRepository.ListModelo(service, filtro);
         }
 
-        [HttpGet("marcas/{service:int}")]
-        public async Task<ActionResult<BaseResponse<List<MarcaDto>>>> GetMarcas([FromRoute] int service)
+        [HttpPost("marcas/{service:int}")]
+        public async Task<ActionResult<BaseResponse<List<MarcaDto>>>> GetMarcas([FromRoute] int service, [FromBody] ReporteHistorialFiltro filtro)
         {
-            return await _reportesRepository.ListMarca(service);
+            return await _reportesRepository.ListMarca(service, filtro);
         }
 
-        [HttpGet("or/{service:int}")]
-        public async Task<ActionResult<BaseResponse<List<OrdenReparacionDto>>>> GetOR([FromRoute] int service)
+        [HttpPost("or/{service:int}")]
+        public async Task<ActionResult<BaseResponse<List<OrdenReparacionDto>>>> GetOR([FromRoute] int service, [FromBody] ReporteHistorialFiltro filtro)
         {
-            return await _reportesRepository.ListOR(service);
+            return await _reportesRepository.ListOR(service, filtro);
         }
     }
 }

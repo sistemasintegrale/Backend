@@ -78,17 +78,15 @@ namespace SGE.Application.Services
                 cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
                 cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
                 cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.CommandTimeout = 99999999;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
                     listaResultado.Add(new ReporteHistorial()
                     {
-                        //IdPlaca = (int)reader["IdPlaca"],
                         Placa = (string)reader["Placa"],
                         NombreCliente = (string)reader["NombreCliente"],
-                        //IdMarca = (int)reader["IdMarca"],
                         Marca = (string)reader["Marca"],
-                        //IdMarca = (int)reader["IdMarca"],
                         Modelo = (string)reader["Modelo"],
                         NumeroOrden = (string)reader["NumeroOrden"],
                         Situacion = (string)reader["Situacion"],
@@ -124,6 +122,7 @@ namespace SGE.Application.Services
                 cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
                 cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
                 cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.CommandTimeout = 99999999;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
@@ -136,7 +135,7 @@ namespace SGE.Application.Services
         }       
  
 
-        public async Task<BaseResponse<List<MarcaDto>>> ListMarca(int service)
+        public async Task<BaseResponse<List<MarcaDto>>> ListMarca(int service, ReporteHistorialFiltro filtro)
         {
             BaseResponse<List<MarcaDto>> response = new BaseResponse<List<MarcaDto>>();
             response.Data = await Task.Run(() =>
@@ -147,6 +146,13 @@ namespace SGE.Application.Services
                 conn.Open();
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.CommandText = "USP_PRY_MARCA_LIST";
+                cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaDesde;
+                cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaHasta;
+                cmd.Parameters.Add("@marca", System.Data.SqlDbType.Int).Value = filtro.marca;
+                cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
+                cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
+                cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.CommandTimeout = 99999999;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
@@ -163,7 +169,7 @@ namespace SGE.Application.Services
             return response;
         }
 
-        public async Task<BaseResponse<List<ModeloDto>>> ListModelo(int service)
+        public async Task<BaseResponse<List<ModeloDto>>> ListModelo(int service, ReporteHistorialFiltro filtro)
         {
             BaseResponse<List<ModeloDto>> response = new BaseResponse<List<ModeloDto>>();
             response.Data = await Task.Run(() =>
@@ -174,6 +180,13 @@ namespace SGE.Application.Services
                 conn.Open();
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.CommandText = "USP_PRY_MODELO_LIST";
+                cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaDesde;
+                cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaHasta;
+                cmd.Parameters.Add("@marca", System.Data.SqlDbType.Int).Value = filtro.marca;
+                cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
+                cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
+                cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.CommandTimeout = 99999999;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
@@ -190,7 +203,7 @@ namespace SGE.Application.Services
             return response;
         }
 
-        public async Task<BaseResponse<List<PlacaDto>>> ListPlaca(int service)
+        public async Task<BaseResponse<List<PlacaDto>>> ListPlaca(int service, ReporteHistorialFiltro filtro)
         {
             BaseResponse<List<PlacaDto>> response = new BaseResponse<List<PlacaDto>>();
             response.Data = await Task.Run(() =>
@@ -201,6 +214,13 @@ namespace SGE.Application.Services
                 conn.Open();
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.CommandText = "USP_PRY_PLACA_LIST";
+                cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaDesde;
+                cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaHasta;
+                cmd.Parameters.Add("@marca", System.Data.SqlDbType.Int).Value = filtro.marca;
+                cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
+                cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
+                cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.CommandTimeout = 99999999;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
@@ -217,7 +237,7 @@ namespace SGE.Application.Services
             return response;
         }
 
-        public async Task<BaseResponse<List<OrdenReparacionDto>>> ListOR(int service)
+        public async Task<BaseResponse<List<OrdenReparacionDto>>> ListOR(int service, ReporteHistorialFiltro filtro)
         {
             BaseResponse<List<OrdenReparacionDto>> response = new BaseResponse<List<OrdenReparacionDto>>();
             response.Data = await Task.Run(() =>
@@ -228,6 +248,13 @@ namespace SGE.Application.Services
                 conn.Open();
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.CommandText = "USP_PRY_OR_LIST";
+                cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaDesde;
+                cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaHasta;
+                cmd.Parameters.Add("@marca", System.Data.SqlDbType.Int).Value = filtro.marca;
+                cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
+                cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
+                cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.CommandTimeout = 99999999;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {

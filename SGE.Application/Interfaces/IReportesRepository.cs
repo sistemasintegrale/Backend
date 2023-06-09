@@ -18,9 +18,9 @@ namespace SGE.Application.Interfaces
     public interface IReportesRepository
     {
         Task<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>> ReporteHistorial(ReporteHistorialFiltro filtro, int service);        
-        Task<BaseResponse<List<MarcaDto>>>ListMarca(int service);
-        Task<BaseResponse<List<ModeloDto>>> ListModelo(int service);
-        Task<BaseResponse<List<PlacaDto>>> ListPlaca(int service);
-        Task<BaseResponse<List<OrdenReparacionDto>>> ListOR(int service);
+        Task<BaseResponse<List<MarcaDto>>>ListMarca(int service, ReporteHistorialFiltro filtro);
+        Task<BaseResponse<List<ModeloDto>>> ListModelo(int service, ReporteHistorialFiltro filtro);
+        Task<BaseResponse<List<PlacaDto>>> ListPlaca(int service, ReporteHistorialFiltro filtro);
+        Task<BaseResponse<List<OrdenReparacionDto>>> ListOR(int service, ReporteHistorialFiltro filtro);
     }
 }
