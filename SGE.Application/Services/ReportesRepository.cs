@@ -30,14 +30,14 @@ namespace SGE.Application.Services
             _novaMotosDbContext = novaMotosDbContext;
         }
 
-        public async Task<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>> ReporteHistorial(ReporteHistorialFiltro filtro, int service)
+        public async Task<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>> ReporteHistorial(ReporteHistorialFiltro filtro, int service, int cliente)
         {
             PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>> response = new PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>();
             response.Data = new BaseResponse<List<ReporteHistorialResponseDto>>();
             try
             {
                 List<ReporteHistorial> listaResultado = new List<ReporteHistorial>();
-                var tupla = await Task.WhenAll(ObtenerReporteHistorial(filtro, service));
+                var tupla = await Task.WhenAll(ObtenerReporteHistorial(filtro, service, cliente));
                 listaResultado = tupla[0].Item1;
                 response.Cantidad = tupla[0].Item2;
                 response.Data.Data = _mapper.Map<List<ReporteHistorialResponseDto>>(listaResultado);
@@ -50,17 +50,16 @@ namespace SGE.Application.Services
                 response.Data.innerExeption = ex.Message;
             }
             return response;
-        }      
+        }
 
-        private async Task<Tuple<List<ReporteHistorial>, int>> ObtenerReporteHistorial(ReporteHistorialFiltro filtro, int service)
+        private async Task<Tuple<List<ReporteHistorial>, int>> ObtenerReporteHistorial(ReporteHistorialFiltro filtro, int service, int cliente)
         {
-            var lista = await CargarRegistrosReporteHistorial(filtro,service);
-            var cantidad = await CargarCantidadRegistrosReporteHistorial(filtro,service);
-
+            var lista = await CargarRegistrosReporteHistorial(filtro, service, cliente);
+            var cantidad = await CargarCantidadRegistrosReporteHistorial(filtro, service, cliente);
             return new Tuple<List<ReporteHistorial>, int>(lista, cantidad);
         }
 
-        private async Task<List<ReporteHistorial>> CargarRegistrosReporteHistorial(ReporteHistorialFiltro filtro, int service)
+        private async Task<List<ReporteHistorial>> CargarRegistrosReporteHistorial(ReporteHistorialFiltro filtro, int service, int cliente)
         {
             return await Task.Run(() =>
             {
@@ -78,6 +77,7 @@ namespace SGE.Application.Services
                 cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
                 cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
                 cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.Parameters.Add("@cliente", System.Data.SqlDbType.Int).Value = cliente;
                 cmd.CommandTimeout = 99999999;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -106,7 +106,7 @@ namespace SGE.Application.Services
             });
         }
 
-        private async Task<int> CargarCantidadRegistrosReporteHistorial(ReporteHistorialFiltro filtro, int service)
+        private async Task<int> CargarCantidadRegistrosReporteHistorial(ReporteHistorialFiltro filtro, int service, int cliente)
         {
             return await Task.Run(() =>
             {
@@ -122,6 +122,7 @@ namespace SGE.Application.Services
                 cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
                 cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
                 cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.Parameters.Add("@cliente", System.Data.SqlDbType.Int).Value = cliente;
                 cmd.CommandTimeout = 99999999;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -132,10 +133,10 @@ namespace SGE.Application.Services
                 conn.Close();
                 return Cantidad;
             });
-        }       
- 
+        }
 
-        public async Task<BaseResponse<List<MarcaDto>>> ListMarca(int service, ReporteHistorialFiltro filtro)
+
+        public async Task<BaseResponse<List<MarcaDto>>> ListMarca(int service, ReporteHistorialFiltro filtro, int cliente)
         {
             BaseResponse<List<MarcaDto>> response = new BaseResponse<List<MarcaDto>>();
             response.Data = await Task.Run(() =>
@@ -152,6 +153,7 @@ namespace SGE.Application.Services
                 cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
                 cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
                 cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.Parameters.Add("@cliente", System.Data.SqlDbType.Int).Value = cliente;
                 cmd.CommandTimeout = 99999999;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -169,7 +171,7 @@ namespace SGE.Application.Services
             return response;
         }
 
-        public async Task<BaseResponse<List<ModeloDto>>> ListModelo(int service, ReporteHistorialFiltro filtro)
+        public async Task<BaseResponse<List<ModeloDto>>> ListModelo(int service, ReporteHistorialFiltro filtro, int cliente)
         {
             BaseResponse<List<ModeloDto>> response = new BaseResponse<List<ModeloDto>>();
             response.Data = await Task.Run(() =>
@@ -186,6 +188,7 @@ namespace SGE.Application.Services
                 cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
                 cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
                 cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.Parameters.Add("@cliente", System.Data.SqlDbType.Int).Value = cliente;
                 cmd.CommandTimeout = 99999999;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -203,7 +206,7 @@ namespace SGE.Application.Services
             return response;
         }
 
-        public async Task<BaseResponse<List<PlacaDto>>> ListPlaca(int service, ReporteHistorialFiltro filtro)
+        public async Task<BaseResponse<List<PlacaDto>>> ListPlaca(int service, ReporteHistorialFiltro filtro, int cliente)
         {
             BaseResponse<List<PlacaDto>> response = new BaseResponse<List<PlacaDto>>();
             response.Data = await Task.Run(() =>
@@ -220,6 +223,7 @@ namespace SGE.Application.Services
                 cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
                 cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
                 cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.Parameters.Add("@cliente", System.Data.SqlDbType.Int).Value = cliente;
                 cmd.CommandTimeout = 99999999;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -237,7 +241,7 @@ namespace SGE.Application.Services
             return response;
         }
 
-        public async Task<BaseResponse<List<OrdenReparacionDto>>> ListOR(int service, ReporteHistorialFiltro filtro)
+        public async Task<BaseResponse<List<OrdenReparacionDto>>> ListOR(int service, ReporteHistorialFiltro filtro, int cliente)
         {
             BaseResponse<List<OrdenReparacionDto>> response = new BaseResponse<List<OrdenReparacionDto>>();
             response.Data = await Task.Run(() =>
@@ -254,6 +258,7 @@ namespace SGE.Application.Services
                 cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
                 cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
                 cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.Parameters.Add("@cliente", System.Data.SqlDbType.Int).Value = cliente;
                 cmd.CommandTimeout = 99999999;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -266,6 +271,34 @@ namespace SGE.Application.Services
                 }
                 conn.Close();
                 return _mapper.Map<List<OrdenReparacionDto>>(lista);
+            });
+            response.Mensaje = ReplyMessage.MESSAGE_QUERY;
+            return response;
+        }
+
+        public async Task<BaseResponse<List<ClienteDto>>> ListCliente(int service)
+        {
+            BaseResponse<List<ClienteDto>> response = new BaseResponse<List<ClienteDto>>();
+            response.Data = await Task.Run(() =>
+            {
+                List<Cliente> lista = new List<Cliente>();
+                SqlConnection conn = service == (int)Enums.ServiceNovaMotos ? (SqlConnection)_novaMotosDbContext.Database.GetDbConnection() : (SqlConnection)_context.Database.GetDbConnection();
+                SqlCommand cmd = conn.CreateCommand();
+                conn.Open();
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "USP_PRY_CLIENTE_GET_ALL";
+                cmd.CommandTimeout = 99999999;
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    lista.Add(new Cliente()
+                    {
+                        Id = (int)reader["Id"],
+                        Nombre = reader["Nombre"].ToString()!
+                    });
+                }
+                conn.Close();
+                return _mapper.Map<List<ClienteDto>>(lista);
             });
             response.Mensaje = ReplyMessage.MESSAGE_QUERY;
             return response;

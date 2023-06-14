@@ -35,6 +35,12 @@ namespace SGE.Infraestructure.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
+                    b.Property<int>("CodigoClienteNG")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CodigoClienteNM")
+                        .HasColumnType("int");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -78,9 +84,11 @@ namespace SGE.Infraestructure.Migrations
                         {
                             Id = 1,
                             Apellidos = "",
+                            CodigoClienteNG = 0,
+                            CodigoClienteNM = 0,
                             Email = "side@gmail.com",
                             Estado = false,
-                            FechaCreacion = new DateTime(2023, 5, 16, 18, 34, 3, 719, DateTimeKind.Local).AddTicks(32),
+                            FechaCreacion = new DateTime(2023, 6, 13, 13, 41, 19, 467, DateTimeKind.Local).AddTicks(836),
                             Flag = false,
                             Nombre = "SISTEMA",
                             Password = "cgBvAGcAbwBsAGEAMgAwADEAMgA="

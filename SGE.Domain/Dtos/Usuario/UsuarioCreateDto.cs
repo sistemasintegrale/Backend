@@ -12,5 +12,7 @@ namespace SGE.Domain.Dtos.Usuario
         public string Apellidos { get; set; } = null!;
         public string Email { get; set; } = null!;
         public string Password { get; set; } = null!;
+        public int CodigoClienteNG { get; set; }
+        public int CodigoClienteNM { get; set; }
     }
 }

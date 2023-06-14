@@ -17,10 +17,11 @@ namespace SGE.Application.Interfaces
 {
     public interface IReportesRepository
     {
-        Task<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>> ReporteHistorial(ReporteHistorialFiltro filtro, int service);        
-        Task<BaseResponse<List<MarcaDto>>>ListMarca(int service, ReporteHistorialFiltro filtro);
-        Task<BaseResponse<List<ModeloDto>>> ListModelo(int service, ReporteHistorialFiltro filtro);
-        Task<BaseResponse<List<PlacaDto>>> ListPlaca(int service, ReporteHistorialFiltro filtro);
-        Task<BaseResponse<List<OrdenReparacionDto>>> ListOR(int service, ReporteHistorialFiltro filtro);
+        Task<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>> ReporteHistorial(ReporteHistorialFiltro filtro, int service, int cliente);        
+        Task<BaseResponse<List<MarcaDto>>>ListMarca(int service, ReporteHistorialFiltro filtro, int cliente);
+        Task<BaseResponse<List<ModeloDto>>> ListModelo(int service, ReporteHistorialFiltro filtro, int cliente);
+        Task<BaseResponse<List<PlacaDto>>> ListPlaca(int service, ReporteHistorialFiltro filtro, int cliente);
+        Task<BaseResponse<List<OrdenReparacionDto>>> ListOR(int service, ReporteHistorialFiltro filtro, int cliente);
+        Task<BaseResponse<List<ClienteDto>>> ListCliente(int service);
     }
 }

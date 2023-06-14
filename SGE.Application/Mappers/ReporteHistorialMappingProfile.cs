@@ -20,6 +20,7 @@ namespace SGE.Application.Mappers
             CreateMap<ModeloDto, Modelo>().ReverseMap();
             CreateMap<PlacaDto, Placa>().ReverseMap();
             CreateMap<OrdenReparacionDto, OrdenReparacion>().ReverseMap();
+            CreateMap<ClienteDto, Cliente>().ReverseMap();
         }
 	}
 }

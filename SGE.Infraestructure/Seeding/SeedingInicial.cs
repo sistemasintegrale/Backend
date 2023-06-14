@@ -24,39 +24,7 @@ namespace SGE.Infraestructure.Seeding
                 FechaCreacion = DateTime.Now,
             });
 
-            var listSubMenuDashboard = new List<SubMenu>();
-
-            var SubMenuMain = new SubMenu()
-            {
-                Id = 1,
-                Titulo = "Main",
-                Url = "/dashboard"
-            };
-            listSubMenuDashboard.Add(SubMenuMain);
-
-            var SubMenuReportAutos = new SubMenu()
-            {
-                Id = 2,
-                Titulo = "Reporte Historial Autos",
-                Url = "reporte-historial-autos"
-            };
-            listSubMenuDashboard.Add(SubMenuReportAutos);
-
-            var SubMenuReportMotos = new SubMenu()
-            {
-                Id = 3,
-                Titulo = "Reporte Historial Motos",
-                Url = "reporte-historial-motos"
-            };
-            listSubMenuDashboard.Add(SubMenuReportMotos);
-
-            var menuDashboard = new Menu()
-            {
-                Titulo = "Dashboard",
-                Icono = "mdi mdi-gauge",
-                subMenus = listSubMenuDashboard
-
-            };
+             
 
 
 

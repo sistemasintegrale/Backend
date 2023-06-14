@@ -160,6 +160,8 @@ namespace SGE.Application.Services
                 usuarioDB.Apellidos = usuarioDto.Apellidos;
                 usuarioDB.Email = usuarioDto.Email;
                 usuarioDB.Password = Codec.Encriptar(usuarioDto.Password);
+                usuarioDB.CodigoClienteNG = usuarioDto.CodigoClienteNG;
+                usuarioDB.CodigoClienteNM = usuarioDto.CodigoClienteNM;
                 usuarioDB.Estado = usuarioDto.Estado;
                 usuarioDB.FechaModificacion = DateTime.Now;
                 _applicationDbContext.Usuarios.Update(usuarioDB);
