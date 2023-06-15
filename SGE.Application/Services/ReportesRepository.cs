@@ -5,15 +5,11 @@ using SGE.Application.Bases;
 using SGE.Application.Filtro;
 using SGE.Application.Interfaces;
 using SGE.Application.Pagination;
-using SGE.Domain.Dtos;
-using SGE.Domain.Dtos.Marca;
-using SGE.Domain.Dtos.Modelo;
-using SGE.Domain.Dtos.OrdenReparacion;
-using SGE.Domain.Dtos.ReporteHistorial;
 using SGE.Domain.EntidadesSinLlaves;
 using SGE.Infraestructure.Context;
 using SGE.Utilities.Enum;
 using SGE.Utilities.Static;
+using System.Text.Json;
 
 namespace SGE.Application.Services
 {
@@ -30,17 +26,17 @@ namespace SGE.Application.Services
             _novaMotosDbContext = novaMotosDbContext;
         }
 
-        public async Task<PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>> ReporteHistorial(ReporteHistorialFiltro filtro, int service, int cliente)
+        public async Task<PaginationResponse<BaseResponse<List<ReporteHistorial>>>> ReporteHistorial(ReporteHistorialFiltro filtro, int service, int cliente)
         {
-            PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>> response = new PaginationResponse<BaseResponse<List<ReporteHistorialResponseDto>>>();
-            response.Data = new BaseResponse<List<ReporteHistorialResponseDto>>();
+            PaginationResponse<BaseResponse<List<ReporteHistorial>>> response = new PaginationResponse<BaseResponse<List<ReporteHistorial>>>();
+            response.Data = new BaseResponse<List<ReporteHistorial>>();
             try
             {
                 List<ReporteHistorial> listaResultado = new List<ReporteHistorial>();
                 var tupla = await Task.WhenAll(ObtenerReporteHistorial(filtro, service, cliente));
                 listaResultado = tupla[0].Item1;
                 response.Cantidad = tupla[0].Item2;
-                response.Data.Data = _mapper.Map<List<ReporteHistorialResponseDto>>(listaResultado);
+                response.Data.Data = listaResultado;
                 response.Data.Mensaje = ReplyMessage.MESSAGE_QUERY;
             }
             catch (Exception ex)
@@ -136,9 +132,9 @@ namespace SGE.Application.Services
         }
 
 
-        public async Task<BaseResponse<List<MarcaDto>>> ListMarca(int service, ReporteHistorialFiltro filtro, int cliente)
+        public async Task<BaseResponse<List<Marca>>> ListMarca(int service, ReporteHistorialFiltro filtro, int cliente)
         {
-            BaseResponse<List<MarcaDto>> response = new BaseResponse<List<MarcaDto>>();
+            BaseResponse<List<Marca>> response = new BaseResponse<List<Marca>>();
             response.Data = await Task.Run(() =>
             {
                 List<Marca> lista = new List<Marca>();
@@ -165,15 +161,15 @@ namespace SGE.Application.Services
                     });
                 }
                 conn.Close();
-                return _mapper.Map<List<MarcaDto>>(lista);
+                return lista;
             });
             response.Mensaje = ReplyMessage.MESSAGE_QUERY;
             return response;
         }
 
-        public async Task<BaseResponse<List<ModeloDto>>> ListModelo(int service, ReporteHistorialFiltro filtro, int cliente)
+        public async Task<BaseResponse<List<Modelo>>> ListModelo(int service, ReporteHistorialFiltro filtro, int cliente)
         {
-            BaseResponse<List<ModeloDto>> response = new BaseResponse<List<ModeloDto>>();
+            BaseResponse<List<Modelo>> response = new BaseResponse<List<Modelo>>();
             response.Data = await Task.Run(() =>
             {
                 List<Modelo> lista = new List<Modelo>();
@@ -200,15 +196,15 @@ namespace SGE.Application.Services
                     });
                 }
                 conn.Close();
-                return _mapper.Map<List<ModeloDto>>(lista);
+                return lista;
             });
             response.Mensaje = ReplyMessage.MESSAGE_QUERY;
             return response;
         }
 
-        public async Task<BaseResponse<List<PlacaDto>>> ListPlaca(int service, ReporteHistorialFiltro filtro, int cliente)
+        public async Task<BaseResponse<List<Placa>>> ListPlaca(int service, ReporteHistorialFiltro filtro, int cliente)
         {
-            BaseResponse<List<PlacaDto>> response = new BaseResponse<List<PlacaDto>>();
+            BaseResponse<List<Placa>> response = new BaseResponse<List<Placa>>();
             response.Data = await Task.Run(() =>
             {
                 List<Placa> lista = new List<Placa>();
@@ -235,15 +231,15 @@ namespace SGE.Application.Services
                     });
                 }
                 conn.Close();
-                return _mapper.Map<List<PlacaDto>>(lista);
+                return lista;
             });
             response.Mensaje = ReplyMessage.MESSAGE_QUERY;
             return response;
         }
 
-        public async Task<BaseResponse<List<OrdenReparacionDto>>> ListOR(int service, ReporteHistorialFiltro filtro, int cliente)
+        public async Task<BaseResponse<List<OrdenReparacion>>> ListOR(int service, ReporteHistorialFiltro filtro, int cliente)
         {
-            BaseResponse<List<OrdenReparacionDto>> response = new BaseResponse<List<OrdenReparacionDto>>();
+            BaseResponse<List<OrdenReparacion>> response = new BaseResponse<List<OrdenReparacion>>();
             response.Data = await Task.Run(() =>
             {
                 List<OrdenReparacion> lista = new List<OrdenReparacion>();
@@ -270,15 +266,15 @@ namespace SGE.Application.Services
                     });
                 }
                 conn.Close();
-                return _mapper.Map<List<OrdenReparacionDto>>(lista);
+                return lista;
             });
             response.Mensaje = ReplyMessage.MESSAGE_QUERY;
             return response;
         }
 
-        public async Task<BaseResponse<List<ClienteDto>>> ListCliente(int service)
+        public async Task<BaseResponse<List<Cliente>>> ListCliente(int service)
         {
-            BaseResponse<List<ClienteDto>> response = new BaseResponse<List<ClienteDto>>();
+            BaseResponse<List<Cliente>> response = new BaseResponse<List<Cliente>>();
             response.Data = await Task.Run(() =>
             {
                 List<Cliente> lista = new List<Cliente>();
@@ -298,8 +294,39 @@ namespace SGE.Application.Services
                     });
                 }
                 conn.Close();
-                return _mapper.Map<List<ClienteDto>>(lista);
+                return lista;
             });
+            response.Mensaje = ReplyMessage.MESSAGE_QUERY;
+            return response;
+        }
+
+        public async Task<BaseResponse<List<ReporteHistorial>>> ReporteHistorialExcel(ReporteHistorialFiltro filtro, int service, int cliente)
+        {
+            BaseResponse<List<ReporteHistorial>> response = new BaseResponse<List<ReporteHistorial>>();
+            response.Data = new List<ReporteHistorial>();
+
+            List<ReporteHistorial> listaResultado = new List<ReporteHistorial>();
+            SqlConnection conn = service == (int)Enums.ServiceNovaMotos ? (SqlConnection)_novaMotosDbContext.Database.GetDbConnection() : (SqlConnection)_context.Database.GetDbConnection();
+            SqlCommand cmd = conn.CreateCommand();
+            conn.Open();
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.CommandText = "USP_PRY_HISTORIA_POR_PLACA_EXCEL";
+            cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaDesde;
+            cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaHasta;
+            cmd.Parameters.Add("@marca", System.Data.SqlDbType.Int).Value = filtro.marca;
+            cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
+            cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
+            cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+            cmd.Parameters.Add("@cliente", System.Data.SqlDbType.Int).Value = cliente;
+            cmd.CommandTimeout = 99999999;
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                listaResultado = JsonSerializer.Deserialize<List<ReporteHistorial>>((string)reader["DATA"]!)!;
+            }
+
+            await conn.CloseAsync();
+            response.Data = listaResultado;
             response.Mensaje = ReplyMessage.MESSAGE_QUERY;
             return response;
         }
