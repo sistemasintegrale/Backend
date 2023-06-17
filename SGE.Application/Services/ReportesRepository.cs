@@ -305,29 +305,39 @@ namespace SGE.Application.Services
             BaseResponse<List<ReporteHistorial>> response = new BaseResponse<List<ReporteHistorial>>();
             response.Data = new List<ReporteHistorial>();
 
-            List<ReporteHistorial> listaResultado = new List<ReporteHistorial>();
-            SqlConnection conn = service == (int)Enums.ServiceNovaMotos ? (SqlConnection)_novaMotosDbContext.Database.GetDbConnection() : (SqlConnection)_context.Database.GetDbConnection();
-            SqlCommand cmd = conn.CreateCommand();
-            conn.Open();
-            cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            cmd.CommandText = "USP_PRY_HISTORIA_POR_PLACA_EXCEL";
-            cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaDesde;
-            cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaHasta;
-            cmd.Parameters.Add("@marca", System.Data.SqlDbType.Int).Value = filtro.marca;
-            cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
-            cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
-            cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
-            cmd.Parameters.Add("@cliente", System.Data.SqlDbType.Int).Value = cliente;
-            cmd.CommandTimeout = 99999999;
-            SqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
+            try
             {
-                listaResultado = JsonSerializer.Deserialize<List<ReporteHistorial>>((string)reader["DATA"]!)!;
-            }
+                List<ReporteHistorial> listaResultado = new List<ReporteHistorial>();
+                SqlConnection conn = service == (int)Enums.ServiceNovaMotos ? (SqlConnection)_novaMotosDbContext.Database.GetDbConnection() : (SqlConnection)_context.Database.GetDbConnection();
+                SqlCommand cmd = conn.CreateCommand();
+                conn.Open();
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "USP_PRY_HISTORIA_POR_PLACA_EXCEL";
+                cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaDesde;
+                cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaHasta;
+                cmd.Parameters.Add("@marca", System.Data.SqlDbType.Int).Value = filtro.marca;
+                cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
+                cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
+                cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.Parameters.Add("@cliente", System.Data.SqlDbType.Int).Value = cliente;
+                cmd.CommandTimeout = 99999999;
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    listaResultado = JsonSerializer.Deserialize<List<ReporteHistorial>>((string)reader["DATA"]!)!;
+                }
 
-            await conn.CloseAsync();
-            response.Data = listaResultado;
-            response.Mensaje = ReplyMessage.MESSAGE_QUERY;
+                await conn.CloseAsync();
+                response.Data = listaResultado;
+                response.Mensaje = ReplyMessage.MESSAGE_QUERY;
+                
+            }
+            catch (Exception ex)
+            {
+                response.IsSucces = false;
+                response.Mensaje = ReplyMessage.MESSAGE_FALIED + filtro;
+                response.innerExeption = ex.Message;
+            }
             return response;
         }
     }
