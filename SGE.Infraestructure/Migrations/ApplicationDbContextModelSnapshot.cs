@@ -75,6 +75,9 @@ namespace SGE.Infraestructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Rol")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
@@ -88,7 +91,7 @@ namespace SGE.Infraestructure.Migrations
                             CodigoClienteNM = 0,
                             Email = "side@gmail.com",
                             Estado = false,
-                            FechaCreacion = new DateTime(2023, 6, 13, 13, 41, 19, 467, DateTimeKind.Local).AddTicks(836),
+                            FechaCreacion = new DateTime(2023, 6, 21, 11, 1, 28, 774, DateTimeKind.Local).AddTicks(37),
                             Flag = false,
                             Nombre = "SISTEMA",
                             Password = "cgBvAGcAbwBsAGEAMgAwADEAMgA="

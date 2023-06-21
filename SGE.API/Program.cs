@@ -30,6 +30,7 @@ builder.Services.AddSingleton(mapper);
 
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IReportesRepository, ReportesRepository>();
+builder.Services.AddScoped<IOrdenReparacionRepository, OrdenReparacionRepository>();
 
 builder.Services.AddCors(options => options.AddPolicy("AllowWebapp",
                                     builder => builder.AllowAnyOrigin()

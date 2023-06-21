@@ -20,5 +20,6 @@ namespace SGE.Domain.Entities
         public DateTime? FechaEliminacion { get; set; }
         public int CodigoClienteNG { get; set; }
         public int CodigoClienteNM { get; set; }
+        public string? Rol { get; set; }
     }
 }

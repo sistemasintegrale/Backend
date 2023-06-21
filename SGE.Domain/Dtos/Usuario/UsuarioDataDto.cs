@@ -17,5 +17,6 @@ namespace SGE.Domain.Dtos.Usuario
         public string Token { get; set; } = null!;
         public int CodigoClienteNG { get; set; }
         public int CodigoClienteNM { get; set; }
+        public string? Rol { get; set; }
     }
 }
