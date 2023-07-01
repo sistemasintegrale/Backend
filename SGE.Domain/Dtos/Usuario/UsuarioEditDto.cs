@@ -15,6 +15,6 @@ namespace SGE.Domain.Dtos.Usuario
         public bool Estado { get; set; }
         public int CodigoClienteNG { get; set; }
         public int CodigoClienteNM { get; set; }
-        public string? Rol { get; set; }
+        public bool Admin { get; set; }
     }
 }

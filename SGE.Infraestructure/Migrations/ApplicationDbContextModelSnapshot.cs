@@ -30,6 +30,9 @@ namespace SGE.Infraestructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<bool>("Admin")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Apellidos")
                         .IsRequired()
                         .HasMaxLength(200)
@@ -75,9 +78,6 @@ namespace SGE.Infraestructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Rol")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
@@ -86,12 +86,13 @@ namespace SGE.Infraestructure.Migrations
                         new
                         {
                             Id = 1,
+                            Admin = false,
                             Apellidos = "",
                             CodigoClienteNG = 0,
                             CodigoClienteNM = 0,
                             Email = "side@gmail.com",
                             Estado = false,
-                            FechaCreacion = new DateTime(2023, 6, 21, 11, 1, 28, 774, DateTimeKind.Local).AddTicks(37),
+                            FechaCreacion = new DateTime(2023, 6, 27, 17, 27, 36, 495, DateTimeKind.Local).AddTicks(6262),
                             Flag = false,
                             Nombre = "SISTEMA",
                             Password = "cgBvAGcAbwBsAGEAMgAwADEAMgA="

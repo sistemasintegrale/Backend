@@ -95,8 +95,8 @@ namespace SGE.Application.Services
                         NumeroDocumento = (string)reader["NumeroDocumento"],
                         FechaDocumento = ((DateTime)reader["FechaDocumento"]).ToString("dd/MM/yyyy"),
                         OrdenCompra = (string)reader["OrdenCompra"],
-                        Importe = (decimal)reader["Importe"]
-
+                        Importe = (decimal)reader["Importe"],
+                        Moneda = (string)reader["Moneda"]
                     });
                 }
 
@@ -135,9 +135,52 @@ namespace SGE.Application.Services
         }
 
 
-        public Task<BaseResponse<List<OrdenReparacionList>>> OrdenReparacionExcel(ReporteHistorialFiltro filtro, int service, int cliente)
+        public Task<BaseResponse<string>> OrdenReparacionExcel(ReporteHistorialFiltro filtro, int service, int cliente)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<BaseResponse<string>> DatosDashboard(int service, int cliente)
+        {
+            BaseResponse<string> response = new BaseResponse<string>();
+
+            try
+            {
+
+                SqlConnection conn = service == (int)Enums.ServiceNovaMotos ? (SqlConnection)_novaMotosDbContext.Database.GetDbConnection() : (SqlConnection)_context.Database.GetDbConnection();
+                SqlCommand cmd = conn.CreateCommand();
+                conn.Open();
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "USP_PRY_DATOS_DASHBOARD";
+                cmd.Parameters.Add("@cliente", System.Data.SqlDbType.Int).Value = cliente;
+                cmd.CommandTimeout = 99999999;
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    var data = (string)reader["DATA"]!;
+                    if (string.IsNullOrEmpty(data))
+                    {
+                        response.IsSucces = false;
+                        response.Mensaje = ReplyMessage.MESSAGE_QUERY_EMPTY;
+                    }
+                    else
+                    {
+                        response.Data = data; ;
+                        response.Mensaje = ReplyMessage.MESSAGE_QUERY;
+                    }
+                }
+
+                await conn.CloseAsync();
+
+
+            }
+            catch (Exception ex)
+            {
+                response.IsSucces = false;
+                response.Mensaje = ReplyMessage.MESSAGE_FALIED;
+                response.innerExeption = ex.Message;
+            }
+            return response;
         }
     }
 }

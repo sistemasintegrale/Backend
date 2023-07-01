@@ -164,6 +164,7 @@ namespace SGE.Application.Services
                 usuarioDB.CodigoClienteNM = usuarioDto.CodigoClienteNM;
                 usuarioDB.Estado = usuarioDto.Estado;
                 usuarioDB.FechaModificacion = DateTime.Now;
+                usuarioDB.Admin = usuarioDto.Admin;
                 _applicationDbContext.Usuarios.Update(usuarioDB);
                 await _applicationDbContext.SaveChangesAsync();
                 response.Data = _mapper.Map<UsuarioDataDto>(usuarioDB);
@@ -233,7 +234,7 @@ namespace SGE.Application.Services
 
         public async Task<Usuario> AccountByuserName(string userName)
         {
-            return await _applicationDbContext.Usuarios.FirstOrDefaultAsync(x => x.Email == userName);
+            return await _applicationDbContext.Usuarios.FirstOrDefaultAsync(x => x.Nombre == userName);
         }
 
         public async Task<BaseResponse<UsuarioDataDto>> AccountByuserEmail(string userName)

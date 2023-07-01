@@ -45,7 +45,7 @@ namespace SGE.API.Controllers
 
         [HttpPost("excel/{service:int}")]
         [AllowAnonymous]
-        public async Task<ActionResult<BaseResponse<List<ReporteHistorial>>>> PostExcel([FromBody] ReporteHistorialFiltro filtro, [FromRoute] int service)
+        public async Task<ActionResult<BaseResponse<string>>> PostExcel([FromBody] ReporteHistorialFiltro filtro, [FromRoute] int service)
         {
             var identntity = HttpContext.User.Identity as ClaimsIdentity;
             var userclaims = identntity.Claims;

@@ -300,14 +300,13 @@ namespace SGE.Application.Services
             return response;
         }
 
-        public async Task<BaseResponse<List<ReporteHistorial>>> ReporteHistorialExcel(ReporteHistorialFiltro filtro, int service, int cliente)
+        public async Task<BaseResponse<string>> ReporteHistorialExcel(ReporteHistorialFiltro filtro, int service, int cliente)
         {
-            BaseResponse<List<ReporteHistorial>> response = new BaseResponse<List<ReporteHistorial>>();
-            response.Data = new List<ReporteHistorial>();
+            BaseResponse<string> response = new BaseResponse<string>();
 
             try
             {
-                List<ReporteHistorial> listaResultado = new List<ReporteHistorial>();
+                
                 SqlConnection conn = service == (int)Enums.ServiceNovaMotos ? (SqlConnection)_novaMotosDbContext.Database.GetDbConnection() : (SqlConnection)_context.Database.GetDbConnection();
                 SqlCommand cmd = conn.CreateCommand();
                 conn.Open();
@@ -324,18 +323,27 @@ namespace SGE.Application.Services
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    listaResultado = JsonSerializer.Deserialize<List<ReporteHistorial>>((string)reader["DATA"]!)!;
+                    var data = (string)reader["DATA"]!;
+                    if (string.IsNullOrEmpty(data))
+                    {
+                        response.IsSucces = false;
+                        response.Mensaje = ReplyMessage.MESSAGE_QUERY_EMPTY;
+                    }
+                    else
+                    {
+                        response.Data = data; ;
+                        response.Mensaje = ReplyMessage.MESSAGE_QUERY;
+                    }
                 }
 
                 await conn.CloseAsync();
-                response.Data = listaResultado;
-                response.Mensaje = ReplyMessage.MESSAGE_QUERY;
+                
                 
             }
             catch (Exception ex)
             {
                 response.IsSucces = false;
-                response.Mensaje = ReplyMessage.MESSAGE_FALIED + filtro;
+                response.Mensaje = ReplyMessage.MESSAGE_FALIED;
                 response.innerExeption = ex.Message;
             }
             return response;

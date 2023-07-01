@@ -78,7 +78,7 @@ namespace SGE.API.Controllers
             var userclaims = identntity.Claims;
             var id = userclaims.FirstOrDefault(o => o.Type == ClaimTypes.NameIdentifier)?.Value;
             var response = await _usuarioRepository.GetById(Convert.ToInt32(id));
-            BaseResponse<string> nuevoToken = await _usuarioRepository.GenerateToken(new TokenRequestDto() { email = response.Data.Email, password = Codec.DesEncriptar(response.Data.Password) });
+            BaseResponse<string> nuevoToken = await _usuarioRepository.GenerateToken(new TokenRequestDto() { email = response.Data.Nombre, password = Codec.DesEncriptar(response.Data.Password) });
             response.Data.Token = nuevoToken.Data;
             return response;
         }

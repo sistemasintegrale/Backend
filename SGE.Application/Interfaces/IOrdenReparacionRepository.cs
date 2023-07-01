@@ -13,6 +13,7 @@ namespace SGE.Application.Interfaces
     public interface IOrdenReparacionRepository
     {
         Task<PaginationResponse<BaseResponse<List<OrdenReparacionList>>>> OrdenReparacion(ReporteHistorialFiltro filtro, int service, int cliente);
-        Task<BaseResponse<List<OrdenReparacionList>>> OrdenReparacionExcel(ReporteHistorialFiltro filtro, int service, int cliente);
+        Task<BaseResponse<string>> OrdenReparacionExcel(ReporteHistorialFiltro filtro, int service, int cliente);
+        Task<BaseResponse<string>> DatosDashboard( int service, int cliente);
     }
 }

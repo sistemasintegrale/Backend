@@ -23,6 +23,7 @@ namespace SGE.Domain.EntidadesSinLlaves
         public string FechaDocumento { get; set; } = null!;
         public string OrdenCompra { get; set; } = null!;
         public decimal Importe { get; set; }
+        public string Moneda { get; set; } = null!;
     }
      
 }
