@@ -14,6 +14,6 @@ namespace SGE.Application.Interfaces
     {
         Task<PaginationResponse<BaseResponse<List<OrdenReparacionList>>>> OrdenReparacion(ReporteHistorialFiltro filtro, int service, int cliente);
         Task<BaseResponse<string>> OrdenReparacionExcel(ReporteHistorialFiltro filtro, int service, int cliente);
-        Task<BaseResponse<string>> DatosDashboard( int service, int cliente);
+        Task<BaseResponse<string>> DatosDashboard(int service, int cliente, string FechaIncio, string FechaFinal);
     }
 }

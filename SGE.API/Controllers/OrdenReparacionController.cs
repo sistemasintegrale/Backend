@@ -39,16 +39,16 @@ namespace SGE.API.Controllers
             return await _reportesRepository.OrdenReparacion(filtro, service, icod);
         }
 
-        [HttpGet("/api/dashboard/{service:int}")]
-        public async Task<ActionResult<BaseResponse<string>>> PostExcel( [FromRoute] int service)
+        [HttpPost("/api/dashboard")]
+        public async Task<ActionResult<BaseResponse<string>>> PostExcel([FromBody] DashboardFilter filter)
         {
             var identntity = HttpContext.User.Identity as ClaimsIdentity;
             var userclaims = identntity.Claims;
             var id = userclaims.FirstOrDefault(o => o.Type == ClaimTypes.NameIdentifier)?.Value;
             var response = await _usuarioRepository.GetById(Convert.ToInt32(id));
             var usuario = response.Data;
-            var icod = service == (int)Enums.ServiceNovaMotos ? usuario.CodigoClienteNM : usuario.CodigoClienteNG;
-            return await _reportesRepository.DatosDashboard(service, icod);
+            var icod = filter.Service == (int)Enums.ServiceNovaMotos ? usuario.CodigoClienteNM : usuario.CodigoClienteNG;
+            return await _reportesRepository.DatosDashboard(filter.Service, icod, filter.FechaInicio, filter.FechaFinal);
         }
 
     }

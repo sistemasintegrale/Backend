@@ -140,7 +140,7 @@ namespace SGE.Application.Services
             throw new NotImplementedException();
         }
 
-        public async Task<BaseResponse<string>> DatosDashboard(int service, int cliente)
+        public async Task<BaseResponse<string>> DatosDashboard(int service, int cliente, string FechaInicio, string FechaFinal)
         {
             BaseResponse<string> response = new BaseResponse<string>();
 
@@ -153,6 +153,8 @@ namespace SGE.Application.Services
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.CommandText = "USP_PRY_DATOS_DASHBOARD";
                 cmd.Parameters.Add("@cliente", System.Data.SqlDbType.Int).Value = cliente;
+                cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar, 10).Value = FechaInicio;
+                cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar, 10).Value = FechaFinal;
                 cmd.CommandTimeout = 99999999;
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())

@@ -156,82 +156,161 @@ D:/PROYECTOS RAFHAEL/SOLUCIONES/SGE.BACKEND/SGE.API/obj/Debug/net6.0/ref/SGE.API
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.API/obj/Debug/net6.0/SGE.API.pdb
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.API/obj/Debug/net6.0/SGE.API.genruntimeconfig.cache
 /Users/rafhael/Desktop/Escritorio/SIDE/Backend/SGE.API/obj/Debug/net6.0/ref/SGE.API.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\appsettings.Development.json
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\appsettings.json
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\SGE.API.exe
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\SGE.API.deps.json
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\SGE.API.runtimeconfig.json
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\SGE.API.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\SGE.API.pdb
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\AutoMapper.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Humanizer.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\System.Drawing.Common.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\System.Runtime.Caching.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\System.Security.Permissions.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\System.Windows.Extensions.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\SGE.Application.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\SGE.Domain.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\SGE.Infraestructure.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\SGE.Utilities.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\SGE.Application.pdb
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\SGE.Domain.pdb
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\SGE.Infraestructure.pdb
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\bin\Debug\net6.0\SGE.Utilities.pdb
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\SGE.API.csproj.AssemblyReference.cache
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\SGE.API.GeneratedMSBuildEditorConfig.editorconfig
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\SGE.API.AssemblyInfoInputs.cache
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\SGE.API.AssemblyInfo.cs
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\SGE.API.csproj.CoreCompileInputs.cache
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\SGE.API.MvcApplicationPartsAssemblyInfo.cs
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\SGE.API.MvcApplicationPartsAssemblyInfo.cache
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\staticwebassets\msbuild.SGE.API.Microsoft.AspNetCore.StaticWebAssets.props
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\staticwebassets\msbuild.build.SGE.API.props
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.SGE.API.props
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.SGE.API.props
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\staticwebassets.pack.json
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\staticwebassets.build.json
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\staticwebassets.development.json
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\scopedcss\bundle\SGE.API.styles.css
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\SGE.API.csproj.CopyComplete
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\SGE.API.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\refint\SGE.API.dll
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\SGE.API.pdb
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\SGE.API.genruntimeconfig.cache
-D:\PROYECTOS RAFHAEL\SOLUCIONES\Backend\SGE.API\obj\Debug\net6.0\ref\SGE.API.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/appsettings.Development.json
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/appsettings.json
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/SGE.API.exe
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/SGE.API.deps.json
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/SGE.API.runtimeconfig.json
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/SGE.API.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/SGE.API.pdb
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/AutoMapper.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Humanizer.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.Identity.Client.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.OpenApi.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/System.Drawing.Common.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/System.Runtime.Caching.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/System.Security.Permissions.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/System.Windows.Extensions.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/SGE.Application.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/SGE.Domain.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/SGE.Infraestructure.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/SGE.Utilities.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/SGE.Application.pdb
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/SGE.Domain.pdb
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/SGE.Infraestructure.pdb
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/bin/Debug/net6.0/SGE.Utilities.pdb
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/SGE.API.csproj.AssemblyReference.cache
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/SGE.API.GeneratedMSBuildEditorConfig.editorconfig
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/SGE.API.AssemblyInfoInputs.cache
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/SGE.API.AssemblyInfo.cs
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/SGE.API.csproj.CoreCompileInputs.cache
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/SGE.API.MvcApplicationPartsAssemblyInfo.cs
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/SGE.API.MvcApplicationPartsAssemblyInfo.cache
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/staticwebassets/msbuild.SGE.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/staticwebassets/msbuild.build.SGE.API.props
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.SGE.API.props
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.SGE.API.props
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/staticwebassets.pack.json
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/staticwebassets.build.json
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/staticwebassets.development.json
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/scopedcss/bundle/SGE.API.styles.css
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/SGE.API.csproj.CopyComplete
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/SGE.API.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/refint/SGE.API.dll
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/SGE.API.pdb
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/SGE.API.genruntimeconfig.cache
+D:/PROYECTOS RAFHAEL/SOLUCIONES/Backend/SGE.API/obj/Debug/net6.0/ref/SGE.API.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/appsettings.Development.json
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/appsettings.json
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/SGE.API
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/SGE.API.deps.json
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/SGE.API.runtimeconfig.json
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/SGE.API.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/SGE.API.pdb
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/AutoMapper.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Humanizer.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.Identity.Client.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/System.Drawing.Common.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/System.Runtime.Caching.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/System.Security.Permissions.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/System.Windows.Extensions.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/SGE.Application.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/SGE.Domain.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/SGE.Infraestructure.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/SGE.Utilities.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/SGE.Application.pdb
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/SGE.Domain.pdb
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/SGE.Infraestructure.pdb
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/bin/Debug/net6.0/SGE.Utilities.pdb
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/SGE.API.csproj.AssemblyReference.cache
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/SGE.API.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/SGE.API.AssemblyInfoInputs.cache
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/SGE.API.AssemblyInfo.cs
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/SGE.API.csproj.CoreCompileInputs.cache
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/SGE.API.MvcApplicationPartsAssemblyInfo.cs
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/SGE.API.MvcApplicationPartsAssemblyInfo.cache
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/staticwebassets/msbuild.SGE.API.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/staticwebassets/msbuild.build.SGE.API.props
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.SGE.API.props
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.SGE.API.props
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/staticwebassets.pack.json
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/staticwebassets.build.json
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/staticwebassets.development.json
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/scopedcss/bundle/SGE.API.styles.css
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/SGE.API.csproj.CopyComplete
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/SGE.API.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/refint/SGE.API.dll
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/SGE.API.pdb
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/SGE.API.genruntimeconfig.cache
+/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/obj/Debug/net6.0/ref/SGE.API.dll
