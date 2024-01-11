@@ -43,6 +43,18 @@ namespace SGE.API.Controllers
             return await _reportesRepository.ReporteHistorial(filtro, service, icod);
         }
 
+        [HttpPost("v2/{service:int}")]
+        public async Task<ActionResult<BaseResponse<string>>> PostV2([FromBody] ReporteHistorialFiltro filtro, [FromRoute] int service)
+        {
+            var identntity = HttpContext.User.Identity as ClaimsIdentity;
+            var userclaims = identntity.Claims;
+            var id = userclaims.FirstOrDefault(o => o.Type == ClaimTypes.NameIdentifier)?.Value;
+            var response = await _usuarioRepository.GetById(Convert.ToInt32(id));
+            var usuario = response.Data;
+            var icod = service == (int)Enums.ServiceNovaMotos ? usuario.CodigoClienteNM : usuario.CodigoClienteNG;
+            return await _reportesRepository.ReporteOR(filtro, service, icod);
+        }
+
         [HttpPost("excel/{service:int}")]
         [AllowAnonymous]
         public async Task<ActionResult<BaseResponse<string>>> PostExcel([FromBody] ReporteHistorialFiltro filtro, [FromRoute] int service)
@@ -54,6 +66,19 @@ namespace SGE.API.Controllers
             var usuario = response.Data;
             var icod = service == (int)Enums.ServiceNovaMotos ? usuario.CodigoClienteNM : usuario.CodigoClienteNG;
             return await _reportesRepository.ReporteHistorialExcel(filtro, service, icod);
+        }
+
+        [HttpPost("excelDet/{service:int}")]
+        [AllowAnonymous]
+        public async Task<ActionResult<BaseResponse<string>>> PostExcelDet([FromBody] ReporteHistorialFiltro filtro, [FromRoute] int service)
+        {
+            var identntity = HttpContext.User.Identity as ClaimsIdentity;
+            var userclaims = identntity.Claims;
+            var id = userclaims.FirstOrDefault(o => o.Type == ClaimTypes.NameIdentifier)?.Value;
+            var response = await _usuarioRepository.GetById(Convert.ToInt32(id));
+            var usuario = response.Data;
+            var icod = service == (int)Enums.ServiceNovaMotos ? usuario.CodigoClienteNM : usuario.CodigoClienteNG;
+            return await _reportesRepository.ListaORExcel(filtro, service, icod);
         }
 
 

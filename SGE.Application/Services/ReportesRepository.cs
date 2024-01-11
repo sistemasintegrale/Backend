@@ -348,5 +348,104 @@ namespace SGE.Application.Services
             }
             return response;
         }
+
+        public async Task<BaseResponse<string>> ListaORExcel(ReporteHistorialFiltro filtro, int service, int cliente)
+        {
+            BaseResponse<string> response = new BaseResponse<string>();
+
+            try
+            {
+
+                SqlConnection conn = service == (int)Enums.ServiceNovaMotos ? (SqlConnection)_novaMotosDbContext.Database.GetDbConnection() : (SqlConnection)_context.Database.GetDbConnection();
+                SqlCommand cmd = conn.CreateCommand();
+                conn.Open();
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "USP_PRY_ORDEN_REPARACION_EXCEL";
+                cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaDesde;
+                cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaHasta;
+                cmd.Parameters.Add("@marca", System.Data.SqlDbType.Int).Value = filtro.marca;
+                cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
+                cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
+                cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.Parameters.Add("@cliente", System.Data.SqlDbType.Int).Value = cliente;
+                cmd.CommandTimeout = 99999999;
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    var data = (string)reader["DATA"]!;
+                    if (string.IsNullOrEmpty(data))
+                    {
+                        response.IsSucces = false;
+                        response.Mensaje = ReplyMessage.MESSAGE_QUERY_EMPTY;
+                    }
+                    else
+                    {
+                        response.Data = data; ;
+                        response.Mensaje = ReplyMessage.MESSAGE_QUERY;
+                    }
+                }
+
+                await conn.CloseAsync();
+
+
+            }
+            catch (Exception ex)
+            {
+                response.IsSucces = false;
+                response.Mensaje = ReplyMessage.MESSAGE_FALIED;
+                response.innerExeption = ex.Message;
+            }
+            return response;
+        }
+
+
+        public async Task<BaseResponse<string>> ReporteOR(ReporteHistorialFiltro filtro, int service, int cliente)
+        {
+            BaseResponse<string> response = new BaseResponse<string>();
+
+            try
+            {
+
+                SqlConnection conn = service == (int)Enums.ServiceNovaMotos ? (SqlConnection)_novaMotosDbContext.Database.GetDbConnection() : (SqlConnection)_context.Database.GetDbConnection();
+                SqlCommand cmd = conn.CreateCommand();
+                conn.Open();
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "USP_PRY_ORDEN_REPARACION_LISTA";
+                cmd.Parameters.Add("@fechaDesde", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaDesde;
+                cmd.Parameters.Add("@fechaHasta", System.Data.SqlDbType.VarChar, 10).Value = filtro.fechaHasta;
+                cmd.Parameters.Add("@marca", System.Data.SqlDbType.Int).Value = filtro.marca;
+                cmd.Parameters.Add("@modelo", System.Data.SqlDbType.Int).Value = filtro.modelo;
+                cmd.Parameters.Add("@placa", System.Data.SqlDbType.Int).Value = filtro.placa;
+                cmd.Parameters.Add("@orden", System.Data.SqlDbType.Int).Value = filtro.orden;
+                cmd.Parameters.Add("@cliente", System.Data.SqlDbType.Int).Value = cliente;
+                cmd.CommandTimeout = 99999999;
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    var data = (string)reader["DATA"]!;
+                    if (string.IsNullOrEmpty(data))
+                    {
+                        response.IsSucces = false;
+                        response.Mensaje = ReplyMessage.MESSAGE_QUERY_EMPTY;
+                    }
+                    else
+                    {
+                        response.Data = data; ;
+                        response.Mensaje = ReplyMessage.MESSAGE_QUERY;
+                    }
+                }
+
+                await conn.CloseAsync();
+
+
+            }
+            catch (Exception ex)
+            {
+                response.IsSucces = false;
+                response.Mensaje = ReplyMessage.MESSAGE_FALIED;
+                response.innerExeption = ex.Message;
+            }
+            return response;
+        }
     }
 }

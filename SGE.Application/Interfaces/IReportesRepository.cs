@@ -20,5 +20,7 @@ namespace SGE.Application.Interfaces
         Task<BaseResponse<List<Placa>>> ListPlaca(int service, ReporteHistorialFiltro filtro, int cliente);
         Task<BaseResponse<List<OrdenReparacion>>> ListOR(int service, ReporteHistorialFiltro filtro, int cliente);
         Task<BaseResponse<List<Cliente>>> ListCliente(int service);
+        Task<BaseResponse<string>> ListaORExcel(ReporteHistorialFiltro filtro, int service, int cliente);
+        Task<BaseResponse<string>> ReporteOR(ReporteHistorialFiltro filtro, int service, int cliente);
     }
 }

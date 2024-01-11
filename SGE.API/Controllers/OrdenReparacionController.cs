@@ -40,7 +40,6 @@ namespace SGE.API.Controllers
         }
 
         [HttpGet("/api/dashboard/{service:int}")]
-        [AllowAnonymous]
         public async Task<ActionResult<BaseResponse<string>>> PostExcel( [FromRoute] int service)
         {
             var identntity = HttpContext.User.Identity as ClaimsIdentity;
