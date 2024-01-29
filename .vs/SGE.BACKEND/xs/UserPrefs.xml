@@ -1,25 +1,24 @@
 ﻿<Properties StartupConfiguration="{1070EBF6-CB19-42B1-AA90-B47BA0DB3B27}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SGE.Application/Services/ReportesRepository.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SGE.API PreferredExecutionTarget="/Applications/Arc.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/Controllers/ReporteController.cs" relfile="SGE.API/Controllers/ReporteController.cs" line="48" column="1" />
+      <Breakpoint file="/Users/rafhael/Desktop/Escritorio/SIDE/BACKENDS/Backend/SGE.API/Controllers/ReporteController.cs" relfile="SGE.API/Controllers/ReporteController.cs" line="36" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="SGE.API/Controllers/OrdenReparacionController.cs">
     <Files>
-      <File FileName="SGE.API/Controllers/UsuarioController.cs" />
-      <File FileName="SGE.Application/Interfaces/IUsuarioRepository.cs" />
-      <File FileName="SGE.Application/Services/UsuarioRepository.cs" />
-      <File FileName="SGE.Domain/Dtos/Usuario/UsuarioDataDto.cs" />
-      <File FileName="SGE.Application/Bases/BaseResponse.cs" />
-      <File FileName="SGE.Application/Filtro/UsuarioFilter.cs" />
-      <File FileName="SGE.Application/Bases/PaginationResponse.cs" />
-      <File FileName="SGE.API/appsettings.json" />
-      <File FileName="SGE.API/Extensions/AuthenticationExtensions.cs" />
-      <File FileName="SGE.API/Extensions/SwaggerExtensions.cs" />
-      <File FileName="SGE.API/Properties/launchSettings.json" />
-      <File FileName="SGE.Application/Services/ReportesRepository.cs" Line="48" Column="33" />
+      <File FileName="SGE.API/Controllers/OrdenReparacionController.cs" Line="28" Column="10" />
+      <File FileName="SGE.Application/Interfaces/IOrdenReparacionRepository.cs" Line="17" Column="50" />
+      <File FileName="SGE.Application/Services/OrdenReparacionRepository.cs" Line="162" Column="56" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="SGE.BACKEND" expanded="True">
-            <Node name="SGE.API" expanded="True" selected="True">
+          <Node name="SGE.BACKEND" selected="True">
+            <Node name="SGE.API" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Extensions" expanded="True" />
               <Node name="Properties" expanded="True" />
@@ -35,10 +34,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.SGE.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
